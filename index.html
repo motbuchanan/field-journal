@@ -328,7 +328,15 @@ body {
 .panel-title {
   font-family:'Special Elite',serif; font-size:15px; text-align:center;
   padding:14px 0 12px; border-bottom:1px solid rgba(139,112,80,0.3);
+  position:relative;
 }
+.panel-close {
+  position:absolute; top:6px; right:10px;
+  width:34px; height:34px; border:none; background:none;
+  font-family:serif; font-size:24px; line-height:1;
+  color:var(--muted); cursor:pointer;
+}
+.panel-close:active { color:var(--leather); }
 .panel-body { padding:16px 20px 24px; }
 .panel-field { margin-bottom:12px; }
 .panel-label {
@@ -457,14 +465,14 @@ body {
 </div>
 
 <button class="fab" id="fab" onclick="openPanel()">+</button>
-<div class="version-badge" onclick="toast('Field Journal v3.1 · Jul 14')">v3.1 · Jul 14</div>
+<div class="version-badge" onclick="toast('Field Journal v3.2 · Jul 14')">v3.2 · Jul 14</div>
 <div class="toast" id="toast"></div>
 
 <!-- ═══ ADD SPECIES PANEL ═══ -->
 <div id="panel-overlay" onclick="closePanel()"></div>
 <div id="action-panel">
   <div class="panel-handle"></div>
-  <div class="panel-title">Add a Species</div>
+  <div class="panel-title">Add a Species<button class="panel-close" onclick="closePanel()" aria-label="Close">×</button></div>
   <div class="panel-body">
     <div class="panel-field">
       <label class="panel-label">Common Name <span class="req">*</span></label>
@@ -510,7 +518,7 @@ body {
      - Everything saves on-device. No account, no cloud, no tracking.
    ══════════════════════════════════════════════════════════════ */
 
-const VERSION = 'v3.1';
+const VERSION = 'v3.2';
 const SK = { // versioned storage keys
   pack:      'bft_v1_pack',
   packMeta:  'bft_v1_packmeta',

@@ -3,7 +3,7 @@
  * CACHE VERSION MUST MATCH THE VERSION BADGE IN index.html.
  * Bump it on every deploy or installed devices never see the update.
  */
-const VERSION = 'v3.1';
+const VERSION = 'v3.2';
 const SHELL   = `field-journal-shell-${VERSION}`;
 const PACKS   = `field-journal-packs-${VERSION}`;
 
@@ -63,17 +63,24 @@ self.addEventListener('fetch', e => {
     return;
   }
 
-  // ── App shell: CACHE FIRST, revalidate in background ───────────
+  // ── The app shell: NETWORK FIRST ──────────────────────────────
+  // This was cache-first, and it caused a real bug: a new index.html
+  // was deployed, packs updated (they're network-first), but the phone
+  // kept serving the OLD cached HTML. New icons, old app. Confusing and
+  // it makes fixes look like they didn't land.
+  //
+  // index.html is ~48KB. Fetching it fresh costs nothing worth having.
+  // Correctness beats a few milliseconds. Cache is the fallback, so the
+  // app still opens with no signal.
   e.respondWith(
-    caches.match(req).then(hit => {
-      const net = fetch(req).then(res => {
+    fetch(req)
+      .then(res => {
         if (res && res.ok) {
           const copy = res.clone();
           caches.open(SHELL).then(c => c.put(req, copy));
         }
         return res;
-      }).catch(() => hit);
-      return hit || net;
-    })
+      })
+      .catch(() => caches.match(req).then(hit => hit || caches.match('./index.html')))
   );
 });
