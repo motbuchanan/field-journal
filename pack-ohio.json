@@ -1,0 +1,3936 @@
+{
+ "id": "ohio",
+ "name": "Ohio",
+ "subtitle": "269 species \u2014 from eBird checklists, 2015\u20132026",
+ "schema": 1,
+ "speciesCount": 269,
+ "source": "Species list and frequency from eBird bar chart data.",
+ "species": [
+  {
+   "name": "Canada Goose",
+   "emoji": "\ud83e\udebf",
+   "status": "common",
+   "freq": 55,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 54.8% of Ohio checklists at peak season (eBird).",
+   "about": "Once purely migratory, urban populations are now year-round residents across most of the continent. Highly social, fiercely territorial when nesting, and famous for the V-formation flight.",
+   "male": "Black head and neck with a bold white chinstrap. Brown body, pale breast. Ganders are larger but plumage is identical.",
+   "female": "Identical to the male but noticeably smaller. She does the incubating while he stands guard nearby.",
+   "diet": [
+    "Grass",
+    "Aquatic plants",
+    "Grain",
+    "Corn"
+   ],
+   "habitat": "Lakes, ponds, rivers, golf courses, park lawns, and farm fields. Needs open water beside short grass for grazing."
+  },
+  {
+   "name": "Mallard",
+   "emoji": "\ud83e\udd86",
+   "status": "common",
+   "freq": 39,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 39.4% of Ohio checklists at peak season (eBird).",
+   "about": "The world's most abundant dabbling duck and the ancestor of nearly every domestic duck breed. Thrives in almost any watery habitat, from wilderness marsh to city retention pond.",
+   "male": "Iridescent green head, yellow bill, chestnut breast set off by a white neck ring, grey body, curled black tail feathers.",
+   "female": "Mottled brown with an orange bill blotched in black. Both sexes show a blue speculum bordered in white.",
+   "diet": [
+    "Seeds",
+    "Aquatic plants",
+    "Grain",
+    "Invertebrates"
+   ],
+   "habitat": "Extraordinarily adaptable \u2014 ponds, lakes, rivers, marshes, flooded fields, and urban parks."
+  },
+  {
+   "name": "Great Blue Heron",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 34,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 34.4% of Ohio checklists at peak season (eBird).",
+   "about": "The largest heron in North America, standing over four feet tall, yet weighing only five or six pounds thanks to hollow bones. Hunts by standing motionless, then striking with a spear-like bill.",
+   "male": "Slate-grey body, white face with a black plume trailing from the eye, a dagger-like yellow bill, and rusty thighs.",
+   "female": "Identical to the male in plumage, slightly smaller on average. Both sexes grow ornate chest plumes when breeding.",
+   "diet": [
+    "Fish",
+    "Frogs",
+    "Snakes",
+    "Voles",
+    "Crayfish"
+   ],
+   "habitat": "Any water at all \u2014 lakes, rivers, marshes, estuaries, even wet fields. Nests colonially in tall trees."
+  },
+  {
+   "name": "Ring-billed Gull",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 30,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 30.0% of Ohio checklists at peak season (eBird).",
+   "about": "The quintessential parking-lot gull \u2014 abundant, bold, and thoroughly at home around people. Often the gull begging for fries a hundred miles from any coast.",
+   "male": "White head and body, pale grey back, and a yellow bill crossed by a neat black ring. Yellow legs.",
+   "female": "Identical to the male. Takes three years to reach full adult plumage, so mottled brown youngsters are common.",
+   "diet": [
+    "Fish",
+    "Insects",
+    "Grain",
+    "Refuse",
+    "Earthworms"
+   ],
+   "habitat": "Lakes, rivers, coasts, landfills, parking lots, and farm fields. Extremely adaptable."
+  },
+  {
+   "name": "Killdeer",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 29,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 28.5% of Ohio checklists at peak season (eBird).",
+   "about": "Famous for the broken-wing act \u2014 it drags a 'crippled' wing away from the nest until the predator follows, then flies off perfectly fine. Nests on bare gravel, including parking lots and flat roofs.",
+   "male": "Brown above, white below, with two crisp black breast bands and a rusty rump that flashes in flight.",
+   "female": "Identical to the male. Both parents perform the distraction display, though only the female incubates.",
+   "diet": [
+    "Earthworms",
+    "Beetles",
+    "Grasshoppers",
+    "Snails"
+   ],
+   "habitat": "Open bare ground of any kind \u2014 gravel lots, airports, farm fields, shorelines, and playing fields."
+  },
+  {
+   "name": "Great Egret",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 26,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 26.5% of Ohio checklists at peak season (eBird).",
+   "about": "Nearly wiped out in the 1800s when its breeding plumes were worth more than gold to the hat trade. The outrage helped launch the Audubon Society, and the bird became its symbol.",
+   "male": "All white with a heavy yellow bill and black legs and feet. Grows long, gauzy back plumes when breeding.",
+   "female": "Identical to the male. Both sexes display the trailing plumes during courtship.",
+   "diet": [
+    "Fish",
+    "Frogs",
+    "Crayfish",
+    "Insects",
+    "Small mammals"
+   ],
+   "habitat": "Marshes, ponds, tidal flats, and flooded fields. Nests in colonies, often with other herons."
+  },
+  {
+   "name": "Double-crested Cormorant",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 25,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 24.5% of Ohio checklists at peak season (eBird).",
+   "about": "Its feathers are deliberately wettable, which cuts buoyancy and makes it a superb underwater pursuit diver \u2014 but it must then stand with wings spread to dry, the classic cormorant pose.",
+   "male": "All black with a hooked bill and a patch of bare orange skin at the throat. Iridescent green sheen in good light.",
+   "female": "Identical to the male. The paired head tufts that give the bird its name are only briefly present in breeding season.",
+   "diet": [
+    "Fish",
+    "Amphibians",
+    "Crustaceans"
+   ],
+   "habitat": "Lakes, rivers, reservoirs, and coasts. Nests colonially in trees or on rocky islands."
+  },
+  {
+   "name": "Wood Duck",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 18,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 17.7% of Ohio checklists at peak season (eBird).",
+   "about": "Often called the most beautiful duck in North America. Unique among waterfowl for nesting in tree cavities \u2014 ducklings leap from the nest hole to the ground on their first day. Nest boxes rescued it from near-extinction.",
+   "male": "Iridescent green and purple crested head with intricate white face striping, chestnut breast, and a red eye.",
+   "female": "Grey-brown with a distinctive white teardrop eye-ring on a grey face, and a white throat.",
+   "diet": [
+    "Acorns",
+    "Seeds",
+    "Berries",
+    "Insects",
+    "Aquatic plants"
+   ],
+   "habitat": "Wooded swamps, beaver ponds, and tree-lined rivers. One of very few ducks that can perch in trees."
+  },
+  {
+   "name": "Ring-necked Duck",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 16,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 16.1% of Ohio checklists at peak season (eBird).",
+   "about": "Badly named \u2014 the chestnut neck ring is nearly invisible in the field, while the bold white bill ring is obvious. Prefers smaller, wooded ponds than most diving ducks.",
+   "male": "Glossy black head with a peaked crown, black back, grey sides with a white spur at the shoulder, and a white-ringed grey bill.",
+   "female": "Brown with a paler face, a white eye-ring, and the same distinctive bill pattern. Peaked head shape is diagnostic.",
+   "diet": [
+    "Aquatic plants",
+    "Seeds",
+    "Snails",
+    "Insects"
+   ],
+   "habitat": "Wooded ponds, beaver ponds, marshes, and small lakes \u2014 smaller waters than most diving ducks use."
+  },
+  {
+   "name": "Blue-winged Teal",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 14,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 14.3% of Ohio checklists at peak season (eBird).",
+   "about": "A long-distance migrant that arrives late in spring and leaves early in fall \u2014 some winter as far south as Peru. Travels in small, fast, low-flying flocks.",
+   "male": "Slate-grey head with a bold white crescent in front of the eye, and a warm spotted brown body.",
+   "female": "Mottled brown with a pale patch at the base of the bill. Both sexes flash a chalky blue forewing in flight.",
+   "diet": [
+    "Seeds",
+    "Aquatic invertebrates",
+    "Snails",
+    "Insects"
+   ],
+   "habitat": "Shallow marshes, prairie potholes, and pond edges with plenty of emergent vegetation."
+  },
+  {
+   "name": "Bufflehead",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 14,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 14.0% of Ohio checklists at peak season (eBird).",
+   "about": "A tiny, buoyant diving duck that pops to the surface like a cork. Nests almost exclusively in old flicker cavities, which limits it to where big woodpeckers live.",
+   "male": "Puffy black head with an enormous white wedge from eye to nape, glossed green and purple. Bright white body.",
+   "female": "Dusky grey-brown with a small, neat white cheek patch. Much smaller and plainer than the male.",
+   "diet": [
+    "Aquatic invertebrates",
+    "Snails",
+    "Crustaceans",
+    "Seeds"
+   ],
+   "habitat": "Small lakes, ponds, rivers, and sheltered coastal bays in winter."
+  },
+  {
+   "name": "Green Heron",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 14,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 13.7% of Ohio checklists at peak season (eBird).",
+   "about": "One of the very few tool-using birds \u2014 it drops feathers, twigs, or insects onto the water as bait and waits for fish to rise. Compact, secretive, and easy to miss until it barks its sharp alarm call.",
+   "male": "Deep chestnut neck, dark iridescent green-blue back, a shaggy dark crown, and orange-yellow legs.",
+   "female": "Very similar to the male, typically a little duller with less intense leg color outside breeding season.",
+   "diet": [
+    "Small fish",
+    "Frogs",
+    "Crayfish",
+    "Aquatic insects"
+   ],
+   "habitat": "Wooded swamps, stream edges, and pond margins with overhanging cover. Hunts from the water's edge."
+  },
+  {
+   "name": "American Herring Gull",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 13,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 13.3% of Ohio checklists at peak season (eBird).",
+   "about": "The archetypal 'seagull' of the North Atlantic. Highly intelligent \u2014 known to drop clams onto rocks and pavement to crack them, and to stamp on wet sand to imitate rain and bring worms up.",
+   "male": "White head and body, grey back, black wingtips with white spots, and a heavy yellow bill with a red spot near the tip.",
+   "female": "Identical to the male. Takes four years to mature, passing through a confusing series of mottled brown plumages.",
+   "diet": [
+    "Fish",
+    "Crabs",
+    "Refuse",
+    "Eggs",
+    "Carrion"
+   ],
+   "habitat": "Coasts, harbors, large lakes, and landfills. Nests colonially on islands and rooftops."
+  },
+  {
+   "name": "Bonaparte's Gull",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 13,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 12.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Lesser Scaup",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 13,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 12.9% of Ohio checklists at peak season (eBird).",
+   "about": "The most abundant diving duck in North America, gathering in rafts that can number in the thousands. Told from Greater Scaup by a peaked, not rounded, crown.",
+   "male": "Black head glossed purple, black breast, white sides, and a grey vermiculated back. Yellow eye.",
+   "female": "Dark brown with a crisp white patch at the base of the bill. Yellow eye and peaked crown.",
+   "diet": [
+    "Aquatic invertebrates",
+    "Mollusks",
+    "Seeds",
+    "Aquatic plants"
+   ],
+   "habitat": "Large lakes, reservoirs, and coastal bays. Breeds on northern prairie and boreal wetlands."
+  },
+  {
+   "name": "Trumpeter Swan",
+   "emoji": "\ud83e\udda2",
+   "status": "uncommon",
+   "freq": 13,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 13.1% of Ohio checklists at peak season (eBird).",
+   "about": "North America's largest native waterfowl and one of the heaviest flying birds on Earth. Hunted nearly to extinction, it has recovered through intensive reintroduction \u2014 a genuine conservation success.",
+   "male": "All white with a black bill and black lores. Cobs are slightly larger than pens but otherwise identical.",
+   "female": "Identical plumage. The pen incubates while the cob defends the territory. Both give the resonant trumpet call.",
+   "diet": [
+    "Aquatic vegetation",
+    "Pondweed",
+    "Sedges",
+    "Tubers"
+   ],
+   "habitat": "Large clear lakes, slow rivers, and marshes with abundant submerged plants. Needs a long runway of open water to take off."
+  },
+  {
+   "name": "Pied-billed Grebe",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 12,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 11.8% of Ohio checklists at peak season (eBird).",
+   "about": "A stubby, secretive grebe that would rather sink slowly out of sight than fly. It can control its buoyancy by trapping or releasing air in its feathers, submerging like a submarine.",
+   "male": "Brown overall with a black throat patch and a thick pale bill crossed by a black ring in breeding season.",
+   "female": "Identical to the male. Both lose the bill ring and throat patch in winter, becoming plain buffy brown.",
+   "diet": [
+    "Crayfish",
+    "Small fish",
+    "Aquatic insects",
+    "Amphibians"
+   ],
+   "habitat": "Ponds, marshes, and slow rivers with dense emergent vegetation to hide in."
+  },
+  {
+   "name": "Redhead",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 12,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 11.9% of Ohio checklists at peak season (eBird).",
+   "about": "A diving duck that frequently lays its eggs in other ducks' nests, letting the host raise its young. Winters in huge rafts, especially on the Texas Gulf coast.",
+   "male": "Rounded coppery-red head, black breast, and grey body \u2014 like a Canvasback but with a rounder head and a shorter blue-grey bill.",
+   "female": "Warm brown overall with a slightly paler face and a dark-tipped grey bill. Rounded head shape is the key.",
+   "diet": [
+    "Aquatic plants",
+    "Seeds",
+    "Mollusks",
+    "Insects"
+   ],
+   "habitat": "Marshes and prairie potholes for breeding; large lakes and coastal bays in winter."
+  },
+  {
+   "name": "Spotted Sandpiper",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 12,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 11.6% of Ohio checklists at peak season (eBird).",
+   "about": "Teeters its rear end constantly, as if perpetually off balance. Unusually, the female is the aggressor \u2014 she arrives first, defends the territory, and may leave several males to raise her broods.",
+   "male": "Bold dark spots on a white breast in summer; plain white below in winter. Constant bobbing motion and stiff, fluttery wingbeats.",
+   "female": "Same spotted plumage but often more heavily marked than the male. She mates with several males in a season.",
+   "diet": [
+    "Insects",
+    "Small crustaceans",
+    "Worms"
+   ],
+   "habitat": "Edges of almost any freshwater \u2014 streams, ponds, lakeshores \u2014 and coastal shorelines in migration."
+  },
+  {
+   "name": "Gadwall",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 11,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 10.6% of Ohio checklists at peak season (eBird).",
+   "about": "A subtly beautiful duck that rewards a second look \u2014 what seems plain grey at a distance is finely vermiculated up close. Often steals food from diving ducks as they surface.",
+   "male": "Intricately patterned grey body, black rear end, and a small white speculum patch visible at rest.",
+   "female": "Mottled brown, very like a small female Mallard, but with an orange-sided bill and that white wing patch.",
+   "diet": [
+    "Aquatic plants",
+    "Seeds",
+    "Invertebrates"
+   ],
+   "habitat": "Marshes, ponds, and reservoirs with plenty of submerged vegetation."
+  },
+  {
+   "name": "Hooded Merganser",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 11,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 11.5% of Ohio checklists at peak season (eBird).",
+   "about": "A small, spectacular fish-eating duck with a fan-shaped crest it can raise and lower. Has a third eyelid that acts as built-in goggles for underwater hunting.",
+   "male": "Black head with a huge white fan-shaped crest, chestnut flanks, and bold black-and-white breast stripes.",
+   "female": "Grey-brown with a shaggy cinnamon crest. Subtle but unmistakable once you know the shape.",
+   "diet": [
+    "Small fish",
+    "Crayfish",
+    "Aquatic insects",
+    "Amphibians"
+   ],
+   "habitat": "Wooded ponds, swamps, and slow rivers. Nests in tree cavities, often alongside Wood Ducks."
+  },
+  {
+   "name": "Lesser Yellowlegs",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 11,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 10.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Northern Shoveler",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 11,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 10.6% of Ohio checklists at peak season (eBird).",
+   "about": "Instantly told by its enormous spatulate bill, which it uses to strain tiny invertebrates from the water. Groups sometimes swim in tight circles to stir food to the surface.",
+   "male": "Green head, white breast, chestnut flanks, and a huge black bill \u2014 a striking, almost cartoonish combination.",
+   "female": "Mottled brown with the same oversized bill, which is orange-tinged along the edges.",
+   "diet": [
+    "Aquatic invertebrates",
+    "Seeds",
+    "Plankton",
+    "Snails"
+   ],
+   "habitat": "Shallow, mucky wetlands and marshes rich in invertebrates. Also uses sewage lagoons and flooded fields."
+  },
+  {
+   "name": "Red-breasted Merganser",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 11,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 11.0% of Ohio checklists at peak season (eBird).",
+   "about": "The saltwater merganser, wintering mostly on coasts and the Great Lakes. Holds the record for the fastest level flight of any duck, clocked over 130 km/h.",
+   "male": "Shaggy double crest, dark green head, white neck ring, and a speckled rusty breast.",
+   "female": "Grey-brown with a shaggy rufous head that blends gradually into the neck \u2014 no crisp border like the Common Merganser.",
+   "diet": [
+    "Small fish",
+    "Crustaceans",
+    "Aquatic insects"
+   ],
+   "habitat": "Coastal bays, estuaries, and the Great Lakes in winter. Breeds on northern lakes and tundra ponds."
+  },
+  {
+   "name": "American Coot",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 10,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 10.3% of Ohio checklists at peak season (eBird).",
+   "about": "Not a duck at all but a rail, with lobed toes instead of webbed feet. Runs splashily across the water to take off, and squabbles constantly in winter flocks.",
+   "male": "Slate-grey to black body with a bright white chicken-like bill and a red eye. Greenish lobed feet.",
+   "female": "Identical to the male. Both sexes aggressively defend territory with charging, splashing displays.",
+   "diet": [
+    "Aquatic plants",
+    "Algae",
+    "Insects",
+    "Tadpoles",
+    "Seeds"
+   ],
+   "habitat": "Ponds, marshes, lakes, and reservoirs with open water and emergent vegetation. Often grazes on lawns nearby."
+  },
+  {
+   "name": "Caspian Tern",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 10,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 9.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Least Sandpiper",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 10,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 10.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "American Wigeon",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 9,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 9.1% of Ohio checklists at peak season (eBird).",
+   "about": "A grazing duck as likely to be found on a wet lawn or golf course as on water. Gives a distinctive three-note whistle that carries across a marsh.",
+   "male": "Green swoosh behind the eye on a grey head, with a creamy-white crown \u2014 hence the old name 'baldpate'. Pinkish-brown breast.",
+   "female": "Warm grey-brown with a plain greyish head and a small blue-grey bill tipped in black.",
+   "diet": [
+    "Grasses",
+    "Aquatic plants",
+    "Waste grain"
+   ],
+   "habitat": "Marshes, lakes, and flooded fields. Frequently grazes on shortgrass well away from water."
+  },
+  {
+   "name": "Common Loon",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 9,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 8.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Common Merganser",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 9,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 8.5% of Ohio checklists at peak season (eBird).",
+   "about": "A large, streamlined fish hunter with a serrated 'sawbill' for gripping slippery prey. Broods of ducklings often ride on the mother's back.",
+   "male": "Clean white body, glossy dark green head with no crest, and a slender red bill.",
+   "female": "Grey body with a sharply demarcated rusty-cinnamon head, a shaggy crest, and a crisp white chin.",
+   "diet": [
+    "Fish",
+    "Aquatic invertebrates",
+    "Crustaceans"
+   ],
+   "habitat": "Clear rivers, large lakes, and reservoirs. Prefers clean water where it can hunt fish by sight."
+  },
+  {
+   "name": "American White Pelican",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 7.9% of Ohio checklists at peak season (eBird).",
+   "about": "One of the largest birds in North America, with a wingspan approaching nine feet. Unlike Brown Pelicans it never plunge-dives \u2014 instead, groups herd fish cooperatively into the shallows and scoop them up together.",
+   "male": "Enormous white bird with black flight feathers and a huge orange bill and pouch. Grows a strange horn on the bill when breeding.",
+   "female": "Identical to the male, including the breeding bill horn, which is shed after eggs are laid.",
+   "diet": [
+    "Fish",
+    "Crayfish",
+    "Amphibians"
+   ],
+   "habitat": "Large lakes, reservoirs, and coastal lagoons. Breeds on isolated islands in prairie and western lakes."
+  },
+  {
+   "name": "Common Goldeneye",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 7.6% of Ohio checklists at peak season (eBird).",
+   "about": "Nicknamed 'whistler' for the loud whirring hum its wings make in flight \u2014 audible long before the bird is seen. Winters on cold, open water, often the last duck to leave a freezing lake.",
+   "male": "Glossy green-black head with a round white spot before the eye, bright white body, and a striking golden eye.",
+   "female": "Chocolate-brown head with a grey body and a dark bill usually tipped in yellow. Golden eye.",
+   "diet": [
+    "Aquatic invertebrates",
+    "Crustaceans",
+    "Mollusks",
+    "Small fish"
+   ],
+   "habitat": "Large lakes, rivers, and coastal bays. Breeds in tree cavities in northern forests."
+  },
+  {
+   "name": "Horned Grebe",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 8.1% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Northern Pintail",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 7.6% of Ohio checklists at peak season (eBird).",
+   "about": "An elegant, long-necked dabbler and one of the earliest spring migrants. The drake's needle-thin tail streamers are unmistakable in flight.",
+   "male": "Chocolate-brown head, a white breast stripe running up the neck, grey body, and long black central tail feathers.",
+   "female": "Mottled buff-brown, plainer than most female ducks, with a slender neck and grey bill. Elegant even in drab plumage.",
+   "diet": [
+    "Seeds",
+    "Waste grain",
+    "Aquatic invertebrates",
+    "Snails"
+   ],
+   "habitat": "Shallow wetlands, flooded fields, and prairie potholes. Winters on coastal marsh and rice fields."
+  },
+  {
+   "name": "Ruddy Duck",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 7.5% of Ohio checklists at peak season (eBird).",
+   "about": "A compact stiff-tailed diver with an outsized attitude. The courting male drums his blue bill against his chest fast enough to froth the water with bubbles.",
+   "male": "Breeding: bright chestnut body, black cap, bold white cheek, and an electric sky-blue bill. Tail often cocked straight up.",
+   "female": "Grey-brown with a dark cap and a single dark line crossing the pale cheek. Also cocks the stiff tail.",
+   "diet": [
+    "Midge larvae",
+    "Aquatic invertebrates",
+    "Seeds"
+   ],
+   "habitat": "Marshes and prairie potholes for breeding; open lakes, reservoirs, and coastal bays in winter."
+  },
+  {
+   "name": "Sandhill Crane",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 8.1% of Ohio checklists at peak season (eBird).",
+   "about": "Among the oldest surviving bird species on Earth \u2014 a fossil from Nebraska matches the modern bird and is about ten million years old. The bugling call carries for miles, and migrating flocks stage in the hundreds of thousands.",
+   "male": "Tall grey body, bright red crown of bare skin, and a bustle of drooping feathers over the rump. Often stained rusty from preening with iron-rich mud.",
+   "female": "Identical to the male. Pairs mate for life and perform elaborate leaping courtship dances together.",
+   "diet": [
+    "Grain",
+    "Tubers",
+    "Insects",
+    "Small vertebrates",
+    "Berries"
+   ],
+   "habitat": "Wet meadows, marshes, and prairie for breeding; harvested grain fields and river roosts on migration."
+  },
+  {
+   "name": "Semipalmated Sandpiper",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 8.3% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Solitary Sandpiper",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 7.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "American Black Duck",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 7,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 6.9% of Ohio checklists at peak season (eBird).",
+   "about": "A dark, wary duck of the eastern marshes. Declining, in part because it hybridizes readily with the expanding Mallard, blurring the species line.",
+   "male": "Very dark sooty-brown body contrasting with a paler grey-brown head. Olive-yellow bill. Violet speculum without white borders.",
+   "female": "Similar to the male but with a duller olive bill. In flight both sexes flash brilliant white wing linings against the dark body.",
+   "diet": [
+    "Aquatic plants",
+    "Seeds",
+    "Snails",
+    "Insects"
+   ],
+   "habitat": "Salt marsh, coastal bays, wooded swamps, and beaver ponds. Prefers quieter, wilder water than Mallards."
+  },
+  {
+   "name": "Common Tern",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 7,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 6.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Dunlin",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 7,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 7.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Greater Yellowlegs",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 7,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 6.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Green-winged Teal",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 7,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 7.2% of Ohio checklists at peak season (eBird).",
+   "about": "The smallest dabbling duck on the continent \u2014 fast, agile, and given to twisting, shorebird-like flock flight.",
+   "male": "Chestnut head with a sweeping iridescent green patch from the eye to the nape, a vertical white bar on the side, and a spotted breast.",
+   "female": "Mottled brown and easy to overlook, but the tiny size and bright green speculum give her away.",
+   "diet": [
+    "Seeds",
+    "Aquatic invertebrates",
+    "Algae"
+   ],
+   "habitat": "Shallow marshes, mudflats, and flooded fields. Feeds in water barely deep enough to float in."
+  },
+  {
+   "name": "Canvasback",
+   "emoji": "\ud83e\udd86",
+   "status": "uncommon",
+   "freq": 6,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 6.5% of Ohio checklists at peak season (eBird).",
+   "about": "The aristocrat of diving ducks, with a long sloping forehead that makes the head and bill look like one continuous wedge. Flies fast and high in long lines.",
+   "male": "Chestnut-red head, black breast, and a strikingly pale white-grey body that gleams at distance.",
+   "female": "Soft brown head and breast with a pale grey body. The distinctive sloped head profile identifies her at any range.",
+   "diet": [
+    "Aquatic plants",
+    "Wild celery",
+    "Tubers",
+    "Mollusks"
+   ],
+   "habitat": "Large lakes, reservoirs, and coastal bays in winter. Breeds on prairie marshes."
+  },
+  {
+   "name": "Pectoral Sandpiper",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 6,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 6.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Semipalmated Plover",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 6,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 6.4% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Common Gallinule",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 5.1% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Black-necked Stilt",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 4,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 3.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Great Black-backed Gull",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 4,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 3.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Greater Scaup",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 4,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 3.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Tundra Swan",
+   "emoji": "\ud83e\udda2",
+   "status": "uncommon",
+   "freq": 4,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 4.2% of Ohio checklists at peak season (eBird).",
+   "about": "The most numerous swan in North America, migrating in long lines between the Arctic and coastal wintering grounds. Smaller and shorter-necked than the Trumpeter, with a higher, yelping call.",
+   "male": "All white with a black bill, usually showing a small yellow teardrop at the base in front of the eye.",
+   "female": "Identical to the male, slightly smaller. Pairs mate for life and migrate as family groups.",
+   "diet": [
+    "Aquatic plants",
+    "Waste grain",
+    "Tubers",
+    "Corn"
+   ],
+   "habitat": "Shallow lakes, estuaries, flooded fields, and coastal bays in winter. Breeds on Arctic tundra."
+  },
+  {
+   "name": "American Woodcock",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 3.3% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Baird's Sandpiper",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 2.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Forster's Tern",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 2.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Mute Swan",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 2.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Sanderling",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 2.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Short-billed Dowitcher",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 3.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Stilt Sandpiper",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 2.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Wilson's Snipe",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 3.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "American Golden-Plover",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 1.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Black Scoter",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 1.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Black-crowned Night Heron",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 2.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Lesser Black-backed Gull",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 1.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Little Blue Heron",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 2,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 2.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Snowy Egret",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 2,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 2.3% of Ohio checklists at peak season (eBird).",
+   "about": "The 'golden slippers' bird \u2014 it shuffles its bright yellow feet through the mud to flush out prey, then snatches it. More active and animated than the larger egrets.",
+   "male": "All white with a slender black bill, black legs, and vivid yellow feet. Wispy recurved plumes when breeding.",
+   "female": "Identical to the male, including the yellow feet and delicate breeding plumes.",
+   "diet": [
+    "Small fish",
+    "Crustaceans",
+    "Insects",
+    "Snails"
+   ],
+   "habitat": "Salt marsh, mudflats, mangroves, and shallow freshwater wetlands."
+  },
+  {
+   "name": "Virginia Rail",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 1.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "American Avocet",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 1.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "American Bittern",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Black Tern",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 1.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Black-bellied Plover",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 1.4% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Buff-breasted Sandpiper",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 1.2% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Cackling Goose",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Franklin's Gull",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Glaucous Gull",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Glossy Ibis",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Greater White-fronted Goose",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 1.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Harlequin Duck",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Iceland Gull",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Least Bittern",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Little Gull",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Long-billed Dowitcher",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Long-tailed Duck",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Marbled Godwit",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Red Knot",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Red-necked Grebe",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Red-necked Phalarope",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Red-throated Loon",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Ross's Goose",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Ruddy Turnstone",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Snow Goose",
+   "emoji": "\ud83e\udebf",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 1.4% of Ohio checklists at peak season (eBird).",
+   "about": "Migrates in enormous, noisy flocks that can darken the sky. Populations have exploded to the point of damaging their Arctic breeding grounds. Comes in a white morph and a dark 'Blue Goose' morph.",
+   "male": "White morph: all white with black wingtips and a pink bill with a dark 'grinning patch'. Blue morph: dark grey-brown body with a white head.",
+   "female": "Identical to the male in both morphs, slightly smaller on average.",
+   "diet": [
+    "Grasses",
+    "Sedges",
+    "Grain",
+    "Roots",
+    "Waste corn"
+   ],
+   "habitat": "Marshes, wet grasslands, and agricultural fields on migration. Winters on coastal marsh and farmland."
+  },
+  {
+   "name": "Surf Scoter",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 1.3% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "White-rumped Sandpiper",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 1.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "White-winged Scoter",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Willet",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Wilson's Phalarope",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "waterfowl"
+   ],
+   "region": "Reported on 0.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Turkey Vulture",
+   "emoji": "\ud83e\udd85",
+   "status": "common",
+   "freq": 42,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 42.2% of Ohio checklists at peak season (eBird).",
+   "about": "Finds carrion by smell \u2014 a genuinely rare ability among birds, and so acute that gas companies have used it to find pipeline leaks by adding the same compound vultures detect. Soars for hours without a wingbeat.",
+   "male": "All dark brown-black with a bare red head and silvery flight feathers below. Holds wings in a shallow V and rocks side to side.",
+   "female": "Identical to the male. Sexes cannot be told apart in the field.",
+   "diet": [
+    "Carrion"
+   ],
+   "habitat": "Open country of every kind \u2014 farmland, roadsides, forest edge, and desert. Roosts communally in big trees."
+  },
+  {
+   "name": "Bald Eagle",
+   "emoji": "\ud83e\udd85",
+   "status": "common",
+   "freq": 26,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 25.8% of Ohio checklists at peak season (eBird).",
+   "about": "Brought back from the edge by the DDT ban and the Endangered Species Act \u2014 from a few hundred pairs in the lower 48 to tens of thousands today. The white head and tail don't appear until about year five.",
+   "male": "Unmistakable: white head and tail, dark brown body, and a massive yellow bill.",
+   "female": "Identical in plumage but distinctly larger \u2014 the most pronounced size difference of any North American raptor.",
+   "diet": [
+    "Fish",
+    "Waterfowl",
+    "Carrion",
+    "Small mammals"
+   ],
+   "habitat": "Always near big water \u2014 coasts, large rivers, and reservoirs. Nests in huge trees with a commanding view."
+  },
+  {
+   "name": "Red-tailed Hawk",
+   "emoji": "\ud83e\udd85",
+   "status": "uncommon",
+   "freq": 17,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 16.6% of Ohio checklists at peak season (eBird).",
+   "about": "The default large hawk of North America, and the one on every highway light pole. Its piercing scream is so iconic that Hollywood dubs it over footage of Bald Eagles, which actually sound rather weak.",
+   "male": "Brown above, pale below with a dark belly band, and a brick-red tail. Extremely variable across its range.",
+   "female": "Identical plumage, larger and heavier. The red tail is diagnostic in adults of both sexes.",
+   "diet": [
+    "Voles",
+    "Rabbits",
+    "Ground squirrels",
+    "Snakes",
+    "Birds"
+   ],
+   "habitat": "Almost anywhere with an open hunting field and a high perch \u2014 farmland, roadsides, desert, and city parks."
+  },
+  {
+   "name": "Osprey",
+   "emoji": "\ud83e\udd85",
+   "status": "uncommon",
+   "freq": 14,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 13.6% of Ohio checklists at peak season (eBird).",
+   "about": "A fish specialist found on every continent but Antarctica. It can reverse an outer toe to grip a fish with two toes front and two back, and its footpads are studded with spines for holding slippery prey.",
+   "male": "Dark brown above, white below, with a white head crossed by a broad dark eye stripe. Wings crooked at the wrist in flight.",
+   "female": "Very similar, but usually with a heavier brown 'necklace' of streaking across the breast. Larger than the male.",
+   "diet": [
+    "Fish (almost exclusively)"
+   ],
+   "habitat": "Any large water with fish \u2014 coasts, lakes, rivers, reservoirs. Nests on platforms, poles, and dead trees."
+  },
+  {
+   "name": "Red-shouldered Hawk",
+   "emoji": "\ud83e\udd85",
+   "status": "uncommon",
+   "freq": 10,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 10.2% of Ohio checklists at peak season (eBird).",
+   "about": "A loud, dramatic hawk of wet woodlands. Its ringing 'kee-aah' is one of the most frequently mimicked calls in the forest \u2014 Blue Jays imitate it constantly, apparently to clear feeders.",
+   "male": "Rufous-barred underparts, rusty shoulder patches, and a boldly black-and-white banded tail. Pale crescent 'windows' near the wingtips in flight.",
+   "female": "Identical plumage, larger. The translucent wing crescents are the best flight mark for both sexes.",
+   "diet": [
+    "Frogs",
+    "Snakes",
+    "Crayfish",
+    "Voles",
+    "Small birds"
+   ],
+   "habitat": "Wet bottomland forest, riparian woods, and swamps. Also mature suburbs with big trees."
+  },
+  {
+   "name": "Cooper's Hawk",
+   "emoji": "\ud83e\udd85",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 8.5% of Ohio checklists at peak season (eBird).",
+   "about": "The classic backyard bird-hawk. It has adapted so well to suburbs that urban Cooper's Hawks often survive better than forest ones \u2014 the feeders are, from the hawk's view, a buffet.",
+   "male": "Blue-grey above, rusty-barred below, with a dark cap contrasting with a paler nape, and a long rounded tail.",
+   "female": "Same pattern, browner-backed, and substantially larger \u2014 approaching crow size.",
+   "diet": [
+    "Songbirds",
+    "Doves",
+    "Starlings",
+    "Squirrels",
+    "Chipmunks"
+   ],
+   "habitat": "Mature woodland, woodland edge, parks, and leafy suburbs. Hunts from concealed perches."
+  },
+  {
+   "name": "American Kestrel",
+   "emoji": "\ud83e\udd85",
+   "status": "uncommon",
+   "freq": 6,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 6.0% of Ohio checklists at peak season (eBird).",
+   "about": "The smallest and most colorful falcon in North America, and in worrying decline. It can see ultraviolet light, which makes the urine trails of voles glow like runway lights.",
+   "male": "Rusty back and tail, blue-grey wings, a rufous crown, and two bold black 'sideburn' stripes on a white face.",
+   "female": "Rusty-brown wings as well as back, all finely barred, with streaked underparts. Same facial pattern.",
+   "diet": [
+    "Grasshoppers",
+    "Voles",
+    "Mice",
+    "Small birds",
+    "Lizards"
+   ],
+   "habitat": "Open country \u2014 farmland, roadsides, meadows, and deserts. Nests in cavities; readily uses nest boxes."
+  },
+  {
+   "name": "Eastern Screech-Owl",
+   "emoji": "\ud83e\udd89",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 5.2% of Ohio checklists at peak season (eBird).",
+   "about": "A tiny owl hiding in plain sight across the East \u2014 often roosting in a hole in a suburban shade tree. Comes in a grey morph and a rufous morph, sometimes in the same brood.",
+   "male": "Small, stocky, with prominent ear tufts and yellow eyes. Bark-patterned grey or rusty red plumage.",
+   "female": "Identical plumage, slightly larger. The whinnying, descending call is unmistakable at night.",
+   "diet": [
+    "Insects",
+    "Mice",
+    "Songbirds",
+    "Crayfish",
+    "Earthworms"
+   ],
+   "habitat": "Woodlands, orchards, parks, and leafy neighborhoods. Nests in cavities and readily uses nest boxes."
+  },
+  {
+   "name": "Northern Harrier",
+   "emoji": "\ud83e\udd85",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 5.1% of Ohio checklists at peak season (eBird).",
+   "about": "Hunts by ear as much as by eye \u2014 it has an owl-like facial disc that funnels sound, letting it find voles in thick grass. Quarters low over fields with wings held in a lazy V.",
+   "male": "Pale grey above, white below, with black wingtips \u2014 the 'grey ghost'. Bold white rump patch.",
+   "female": "Brown above and streaky buff below, much bigger and browner than the male. Same white rump.",
+   "diet": [
+    "Voles",
+    "Mice",
+    "Small birds",
+    "Frogs"
+   ],
+   "habitat": "Marshes, wet meadows, grassland, and farm fields. Nests on the ground in dense cover."
+  },
+  {
+   "name": "Black Vulture",
+   "emoji": "\ud83e\udd85",
+   "status": "uncommon",
+   "freq": 4,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 3.8% of Ohio checklists at peak season (eBird).",
+   "about": "Has a poor sense of smell, so it watches Turkey Vultures and follows them down to a carcass \u2014 then bullies them off it. Expanding steadily northward.",
+   "male": "All black with a bare grey wrinkled head, short square tail, and white patches at the wingtips. Flaps often, in quick shallow beats.",
+   "female": "Identical to the male. Highly social; roosts and forages in family groups.",
+   "diet": [
+    "Carrion",
+    "Refuse",
+    "Occasionally live prey"
+   ],
+   "habitat": "Open and semi-open country, especially near towns, landfills, and highways."
+  },
+  {
+   "name": "Barred Owl",
+   "emoji": "\ud83e\udd89",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 2.7% of Ohio checklists at peak season (eBird).",
+   "about": "The 'who-cooks-for-you' owl, and the most vocal of the large owls. Has expanded west in the last century, where it now outcompetes and displaces the endangered Spotted Owl.",
+   "male": "Mottled grey-brown with horizontal barring on the chest and vertical streaks on the belly. Dark eyes and no ear tufts.",
+   "female": "Identical to the male, slightly larger. Both call year-round, often in raucous duets.",
+   "diet": [
+    "Mice",
+    "Voles",
+    "Crayfish",
+    "Frogs",
+    "Small birds"
+   ],
+   "habitat": "Mature moist forest, wooded swamps, and river bottomland. Also large forested suburbs."
+  },
+  {
+   "name": "Broad-winged Hawk",
+   "emoji": "\ud83e\udd85",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 3.1% of Ohio checklists at peak season (eBird).",
+   "about": "A small woodland buteo that migrates in spectacular swirling flocks called kettles \u2014 tens of thousands can pass a hawk-watch site in a single September day, bound for South America.",
+   "male": "Compact brown hawk with rusty barring on the breast and a tail crossed by broad black-and-white bands.",
+   "female": "Identical to the male. Both are far more often heard \u2014 a thin, plaintive whistle \u2014 than seen in summer.",
+   "diet": [
+    "Frogs",
+    "Toads",
+    "Snakes",
+    "Small mammals",
+    "Insects"
+   ],
+   "habitat": "Interior deciduous and mixed forest. Nests in dense woods, hunts along openings and roads."
+  },
+  {
+   "name": "Rough-legged Hawk",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 1.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Sharp-shinned Hawk",
+   "emoji": "\ud83e\udd85",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 1.8% of Ohio checklists at peak season (eBird).",
+   "about": "A tiny, hyper-agile forest hawk built to chase songbirds through branches. The smallest accipiter in North America, and a familiar terror at winter feeders.",
+   "male": "Blue-grey above, finely rusty-barred below, with a small head, thin legs, and a square-tipped tail. Red eye when adult.",
+   "female": "Same pattern but noticeably larger \u2014 a big female approaches a small male Cooper's Hawk in size.",
+   "diet": [
+    "Small birds",
+    "Occasionally rodents and insects"
+   ],
+   "habitat": "Dense forest and woodland edge; increasingly suburban yards with feeders in winter."
+  },
+  {
+   "name": "Short-eared Owl",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 1.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Great Horned Owl",
+   "emoji": "\ud83e\udd89",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 1.5% of Ohio checklists at peak season (eBird).",
+   "about": "The continent's most powerful and adaptable owl, with a grip strength of over 300 psi. It's one of the very few predators that regularly kills skunks \u2014 owls have a poor sense of smell.",
+   "male": "Big, barrel-shaped, mottled grey-brown with prominent ear tufts, a white throat bib, and huge yellow eyes.",
+   "female": "Identical in plumage but larger. She has the deeper body but he has the deeper hoot.",
+   "diet": [
+    "Rabbits",
+    "Rodents",
+    "Skunks",
+    "Birds",
+    "Reptiles"
+   ],
+   "habitat": "Nearly every habitat on the continent \u2014 forest, desert, swamp, farmland, and city park."
+  },
+  {
+   "name": "Merlin",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 1.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Northern Saw-whet Owl",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 0.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Peregrine Falcon",
+   "emoji": "\ud83e\udd85",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 1.4% of Ohio checklists at peak season (eBird).",
+   "about": "The fastest animal on the planet \u2014 a stooping Peregrine has been clocked over 240 mph. Wiped out east of the Rockies by DDT, then restored partly by releasing birds onto city skyscrapers, which serve nicely as cliffs.",
+   "male": "Slate-grey above, barred white below, with a heavy black 'helmet' and moustache mark. Long pointed wings.",
+   "female": "Identical plumage, up to a third larger than the male.",
+   "diet": [
+    "Pigeons",
+    "Shorebirds",
+    "Ducks",
+    "Songbirds"
+   ],
+   "habitat": "Cliffs, coasts, and city skyscrapers. Hunts over open ground, water, and downtown streets alike."
+  },
+  {
+   "name": "Snowy Owl",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "raptor"
+   ],
+   "region": "Reported on 1.1% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Red-bellied Woodpecker",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 50,
+   "tags": [
+    "woodpecker"
+   ],
+   "region": "Reported on 50.0% of Ohio checklists at peak season (eBird).",
+   "about": "Badly named \u2014 the red belly is a faint pink wash you'll almost never see, while the flaming red cap is obvious. It has expanded steadily northward over the last century and is now a feeder staple.",
+   "male": "Boldly black-and-white barred back with red running from the bill all the way over the crown to the nape.",
+   "female": "Same zebra back, but red only on the nape \u2014 the crown is grey. This is the easiest way to sex them.",
+   "diet": [
+    "Insects",
+    "Acorns",
+    "Seeds",
+    "Berries",
+    "Suet"
+   ],
+   "habitat": "Deciduous woods, parks, and wooded suburbs. Very common at suet and sunflower feeders."
+  },
+  {
+   "name": "Downy Woodpecker",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 45,
+   "tags": [
+    "woodpecker"
+   ],
+   "region": "Reported on 44.7% of Ohio checklists at peak season (eBird).",
+   "about": "The smallest woodpecker in North America and by far the most familiar. Its short bill lets it forage on weed stems and thin twigs where bigger woodpeckers can't go.",
+   "male": "Black and white with a white back stripe, a small stubby bill, and a red patch on the back of the head.",
+   "female": "Identical but with no red at all on the head. Otherwise inseparable from the male.",
+   "diet": [
+    "Beetle larvae",
+    "Ants",
+    "Berries",
+    "Sunflower seeds",
+    "Suet"
+   ],
+   "habitat": "Woods, parks, orchards, and suburbs with trees. A cornerstone of winter mixed flocks with chickadees."
+  },
+  {
+   "name": "Northern Flicker",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 35,
+   "tags": [
+    "woodpecker"
+   ],
+   "region": "Reported on 35.3% of Ohio checklists at peak season (eBird).",
+   "about": "The woodpecker that feeds on the ground, hammering into ant colonies with a barbed, sticky tongue that extends two inches past the bill. Eastern birds flash gold under the wings; western birds flash salmon-red.",
+   "male": "Brown with black barring, a black bib, a spotted belly, and a black moustache stripe. Red nape crescent in the East.",
+   "female": "Identical, but with no moustache stripe \u2014 the cleanest sex mark of any North American woodpecker.",
+   "diet": [
+    "Ants",
+    "Beetles",
+    "Berries",
+    "Seeds"
+   ],
+   "habitat": "Open woodland, parks, and suburbs. Very often seen probing lawns and bare ground for ants."
+  },
+  {
+   "name": "Hairy Woodpecker",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 15,
+   "tags": [
+    "woodpecker"
+   ],
+   "region": "Reported on 15.1% of Ohio checklists at peak season (eBird).",
+   "about": "Essentially a Downy Woodpecker scaled up, and one of the great beginner ID challenges. The giveaway is the bill: on a Hairy it's nearly as long as the head is wide; on a Downy it's a stub.",
+   "male": "Black and white with a white back stripe and a long, chisel-like bill. Red patch on the back of the head.",
+   "female": "Same pattern, no red on the head. Size and bill length separate her from a female Downy.",
+   "diet": [
+    "Wood-boring beetle larvae",
+    "Carpenter ants",
+    "Seeds",
+    "Suet"
+   ],
+   "habitat": "Mature forest of all kinds, from boreal to montane to eastern hardwood. Prefers larger trees than Downy."
+  },
+  {
+   "name": "Red-headed Woodpecker",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 14,
+   "tags": [
+    "woodpecker"
+   ],
+   "region": "Reported on 13.9% of Ohio checklists at peak season (eBird).",
+   "about": "One of only four woodpeckers that stores food, and the only one that covers the cache with wood or bark. Declining sharply as dead trees are cleared and oak savanna disappears.",
+   "male": "Unmistakable: an entirely crimson head, snow-white underparts, and black wings with huge white patches.",
+   "female": "Identical to the male. Juveniles have brown heads and are often mistaken for a different species.",
+   "diet": [
+    "Insects",
+    "Acorns",
+    "Beechnuts",
+    "Berries",
+    "Eggs"
+   ],
+   "habitat": "Open oak woodland, savanna, dead timber in swamps, and roadside snags. Needs standing dead wood."
+  },
+  {
+   "name": "Pileated Woodpecker",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 13,
+   "tags": [
+    "woodpecker"
+   ],
+   "region": "Reported on 13.4% of Ohio checklists at peak season (eBird).",
+   "about": "Crow-sized, and the largest woodpecker in North America now that the Ivory-billed is almost certainly gone. It chisels distinctive rectangular holes so deep they can snap small trees in half.",
+   "male": "Huge black bird with a flaming red crest, a white neck stripe, and a red moustache stripe.",
+   "female": "Same, but the forecrown is grey-black rather than red, and she has no red moustache.",
+   "diet": [
+    "Carpenter ants",
+    "Beetle larvae",
+    "Berries",
+    "Nuts"
+   ],
+   "habitat": "Mature forest with large dead trees. Needs big timber, but tolerates wooded suburbs with old trees."
+  },
+  {
+   "name": "Yellow-bellied Sapsucker",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 9,
+   "tags": [
+    "woodpecker"
+   ],
+   "region": "Reported on 8.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "American Robin",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 76,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 75.6% of Ohio checklists at peak season (eBird).",
+   "about": "Everyone's first bird. It doesn't actually leave in winter so much as change behavior \u2014 flocking into woods to eat fruit, then returning to lawns when the ground thaws, which is why it seems to 'arrive' each spring.",
+   "male": "Dark grey-black head and back, brick-orange breast, white eye-arcs, and a yellow bill.",
+   "female": "Paler and browner overall, with a duller orange breast and a greyer head. Obvious when a pair is side by side.",
+   "diet": [
+    "Earthworms",
+    "Insects",
+    "Berries",
+    "Fruit"
+   ],
+   "habitat": "Lawns, parks, gardens, forests, and tundra alike \u2014 one of the most adaptable birds on the continent."
+  },
+  {
+   "name": "Northern Cardinal",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 72,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 72.1% of Ohio checklists at peak season (eBird).",
+   "about": "The state bird of seven states, more than any other. Unusually, the female sings too \u2014 often from the nest, apparently telling the male when to bring food. The male's red comes entirely from carotenoids in his diet.",
+   "male": "Brilliant scarlet all over, with a black face mask and throat, a tall crest, and a heavy orange-red bill.",
+   "female": "Warm buff-brown with red edging on the crest, wings and tail, and the same orange bill and dark face.",
+   "diet": [
+    "Seeds",
+    "Sunflower seeds",
+    "Berries",
+    "Insects"
+   ],
+   "habitat": "Dense shrubs, woodland edge, thickets, and gardens. Perhaps the most beloved feeder bird in America."
+  },
+  {
+   "name": "Blue Jay",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 71,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 71.1% of Ohio checklists at peak season (eBird).",
+   "about": "Mimics hawk calls convincingly, apparently to scatter birds from a feeder before dropping in. Also one of the great foresters \u2014 a single jay may cache thousands of acorns a year, and the ones it forgets become oak trees.",
+   "male": "Brilliant blue above with a black necklace, white wingbars and tail corners, and a bold crest. The blue is structural, not pigment.",
+   "female": "Identical to the male. Sexes cannot be reliably told apart in the field.",
+   "diet": [
+    "Acorns",
+    "Seeds",
+    "Insects",
+    "Eggs",
+    "Nuts"
+   ],
+   "habitat": "Woodlands, parks, and suburbs with oaks. Bold, loud, and a fixture at feeders."
+  },
+  {
+   "name": "Red-winged Blackbird",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 67,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 66.5% of Ohio checklists at peak season (eBird).",
+   "about": "Among the most abundant birds in North America. Males are ferociously territorial and will attack anything near the nest \u2014 horses, dogs, hawks, and joggers included. The liquid 'conk-la-REE!' is the sound of spring marshes.",
+   "male": "Glossy black with brilliant red-and-yellow shoulder epaulettes, flared in display and hidden when not.",
+   "female": "Heavily streaked dark brown and buff with a pale eyebrow \u2014 looks like a large, dark sparrow.",
+   "diet": [
+    "Seeds",
+    "Grain",
+    "Insects",
+    "Caterpillars"
+   ],
+   "habitat": "Cattail marshes, wet fields, and roadside ditches. Also farm fields and pastures."
+  },
+  {
+   "name": "American Goldfinch",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 64,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 63.6% of Ohio checklists at peak season (eBird).",
+   "about": "The strictest vegetarian of any North American songbird \u2014 even the nestlings get almost no insects. It nests in late summer, timed to the thistle seed crop, long after every other songbird is done.",
+   "male": "Summer: brilliant canary-yellow with a black cap, black wings, and white wingbars. Winter: drab olive-buff.",
+   "female": "Duller yellow-olive with no black cap; in winter, plain buffy-grey.",
+   "diet": [
+    "Thistle seed",
+    "Nyjer",
+    "Sunflower seeds",
+    "Dandelion"
+   ],
+   "habitat": "Weedy fields, roadsides, gardens, and woodland edge. Abundant at nyjer feeders."
+  },
+  {
+   "name": "Song Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 56,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 56.4% of Ohio checklists at peak season (eBird).",
+   "about": "One of the most variable birds in North America, with over 50 named subspecies \u2014 pale and small in the desert, huge and dark in the Aleutians. Often the first bird singing on a warm February morning.",
+   "male": "Streaky brown above and below, with the breast streaks converging into a bold central spot. Rusty crown stripes.",
+   "female": "Identical to the male. Both are best identified by the central breast spot and the pumping tail in flight.",
+   "diet": [
+    "Seeds",
+    "Insects",
+    "Berries",
+    "Beetles"
+   ],
+   "habitat": "Brushy areas near water \u2014 marsh edges, streamsides, thickets, hedgerows, and gardens."
+  },
+  {
+   "name": "Gray Catbird",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 54,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 53.7% of Ohio checklists at peak season (eBird).",
+   "about": "Named for its cat-like mew. A gifted mimic and improviser \u2014 unlike a mockingbird it rarely repeats a phrase, instead stringing together a long, rambling, ever-changing performance from deep inside a thicket.",
+   "male": "Uniform slate-grey with a black cap and a chestnut patch beneath the tail.",
+   "female": "Identical to the male. Neither sex can be told apart in the field.",
+   "diet": [
+    "Insects",
+    "Berries",
+    "Fruit",
+    "Ants"
+   ],
+   "habitat": "Dense thickets, hedgerows, and shrubby gardens. Skulking, but responds readily to pishing."
+  },
+  {
+   "name": "Mourning Dove",
+   "emoji": "\ud83d\udd4a\ufe0f",
+   "status": "common",
+   "freq": 54,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 53.8% of Ohio checklists at peak season (eBird).",
+   "about": "One of the most abundant birds on the continent, with a population over 300 million. The mournful cooing is often mistaken for an owl. Can fly 55 mph, and the wings whistle sharply on takeoff.",
+   "male": "Slender and long-tailed, soft pinkish-buff, with black spots on the wings and a small round head.",
+   "female": "Nearly identical, marginally duller and browner with less neck iridescence.",
+   "diet": [
+    "Seeds",
+    "Grain",
+    "Millet",
+    "Sunflower"
+   ],
+   "habitat": "Open and semi-open country of every kind \u2014 farms, suburbs, parks, roadsides, and desert."
+  },
+  {
+   "name": "Northern Yellow Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 53,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 52.7% of Ohio checklists at peak season (eBird).",
+   "about": "When a cowbird lays an egg in its nest, the Yellow Warbler simply builds a new floor over it and starts again \u2014 nests six stories tall have been found, each layer entombing a cowbird egg.",
+   "male": "Brilliant egg-yolk yellow all over, with rusty-red streaks down the breast and large dark eyes on a plain face.",
+   "female": "Plain yellow with no streaking and a slightly greenish wash above.",
+   "diet": [
+    "Caterpillars",
+    "Insects",
+    "Beetles",
+    "Spiders"
+   ],
+   "habitat": "Willow and alder thickets along streams, wet shrubby areas, and gardens with dense shrubs."
+  },
+  {
+   "name": "Baltimore Oriole",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 49,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 49.0% of Ohio checklists at peak season (eBird).",
+   "about": "Weaves a remarkable hanging pouch nest from plant fibers and string, suspended from the tip of a high branch. Comes readily to orange halves and grape jelly \u2014 one of the few birds you can reliably lure with fruit.",
+   "male": "Flaming orange body with a solid black hood, black wings with a white bar, and an orange-and-black tail.",
+   "female": "Yellow-orange below and olive-brown above, with two white wingbars. Older females can be quite orange.",
+   "diet": [
+    "Nectar",
+    "Fruit",
+    "Caterpillars",
+    "Insects",
+    "Grape jelly"
+   ],
+   "habitat": "Open deciduous woodland, riverside trees, parks, and leafy suburbs \u2014 especially tall elms and cottonwoods."
+  },
+  {
+   "name": "Tree Swallow",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 47,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 47.3% of Ohio checklists at peak season (eBird).",
+   "about": "Unlike other swallows it can digest berries, especially bayberry, which lets it winter further north than any of its relatives and arrive back earliest in spring.",
+   "male": "Iridescent blue-green above, clean white below, with a sharp line through the eye. Dazzling in sunlight.",
+   "female": "Similar but often duller and browner \u2014 first-year females can be almost entirely brown above.",
+   "diet": [
+    "Flying insects",
+    "Bayberries",
+    "Beetles"
+   ],
+   "habitat": "Open fields, marshes, and lakeshores. A cavity nester that took eagerly to bluebird boxes."
+  },
+  {
+   "name": "Common Grackle",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 45,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 45.3% of Ohio checklists at peak season (eBird).",
+   "about": "Overlooked because it's everywhere, but a genuinely striking bird in good light. It soaks hard food in water to soften it, and will raid other birds' nests. Winter roosts can number in the millions.",
+   "male": "Iridescent bronze body with a glossy blue-purple head, pale yellow eyes, and a long keel-shaped tail.",
+   "female": "Duller and browner with less iridescence and a shorter, less keeled tail.",
+   "diet": [
+    "Grain",
+    "Seeds",
+    "Insects",
+    "Eggs",
+    "Refuse"
+   ],
+   "habitat": "Open woods, lawns, parks, farm fields, and marshes. Roosts communally in enormous flocks."
+  },
+  {
+   "name": "Brown-headed Cowbird",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 44,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 44.2% of Ohio checklists at peak season (eBird).",
+   "about": "North America's most notorious brood parasite, laying its eggs in the nests of over 220 species. It followed bison herds historically, which is why it never settled long enough to raise its own young. Forest fragmentation has let it spread devastatingly.",
+   "male": "Glossy green-black body with a distinctly brown head and a stout conical bill.",
+   "female": "Uniform dull grey-brown with faint streaking and a pale throat \u2014 remarkably featureless.",
+   "diet": [
+    "Seeds",
+    "Grain",
+    "Insects",
+    "Grasshoppers"
+   ],
+   "habitat": "Woodland edge, farmland, pastures, and suburbs. Follows livestock as it once followed bison."
+  },
+  {
+   "name": "Tufted Titmouse",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 44,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 44.2% of Ohio checklists at peak season (eBird).",
+   "about": "Plucks hair directly from living animals to line its nest \u2014 squirrels, dogs, and occasionally unsuspecting humans. Its clear whistled 'PETER-peter-peter' is one of the definitive sounds of eastern woods.",
+   "male": "Soft grey above, white below with rusty flanks, a pointed grey crest, and a black patch above the bill.",
+   "female": "Identical to the male. Young often stay with the parents through the winter.",
+   "diet": [
+    "Seeds",
+    "Insects",
+    "Acorns",
+    "Sunflower seeds",
+    "Suet"
+   ],
+   "habitat": "Deciduous woodland, parks, and suburbs with mature trees. Dominant at feeders."
+  },
+  {
+   "name": "White-breasted Nuthatch",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 43,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 42.8% of Ohio checklists at peak season (eBird).",
+   "about": "The upside-down bird \u2014 it's the only group that routinely walks head-first down tree trunks, which lets it spot insects that woodpeckers moving upward miss entirely. Wedges nuts into bark and hammers them open, hence 'nut-hatch'.",
+   "male": "Blue-grey above, white face and breast, a black cap, and rusty undertail. Stubby tail, long bill.",
+   "female": "Very similar, but the cap is grey rather than glossy black \u2014 visible when a pair is together.",
+   "diet": [
+    "Insects",
+    "Acorns",
+    "Sunflower seeds",
+    "Suet"
+   ],
+   "habitat": "Mature deciduous and mixed forest, parks, and wooded suburbs. Joins chickadee flocks in winter."
+  },
+  {
+   "name": "American Crow",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 41,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 41.2% of Ohio checklists at peak season (eBird).",
+   "about": "Recognizes individual human faces, holds grudges, and teaches those grudges to its offspring. Uses tools, solves multi-step puzzles, and gathers in winter roosts that can exceed a hundred thousand birds.",
+   "male": "Entirely glossy black with a heavy bill and a fan-shaped tail. Iridescent purple sheen in good light.",
+   "female": "Identical to the male. Young from previous years often stay to help raise the next brood.",
+   "diet": [
+    "Almost anything \u2014 insects, grain, carrion, eggs, refuse"
+   ],
+   "habitat": "Extraordinarily adaptable. Farmland, city streets, parks, beaches, and landfills. Avoids only deep forest."
+  },
+  {
+   "name": "Dark-eyed Junco",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 41,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 41.0% of Ohio checklists at peak season (eBird).",
+   "about": "The 'snowbird' that shows up under feeders the week the weather turns. Comes in strikingly different regional forms \u2014 slate-grey in the East, boldly black-and-rust in the Rockies \u2014 that were once considered separate species.",
+   "male": "Eastern form: slate-grey hood, back and breast with a clean white belly, a pink bill, and white outer tail feathers that flash in flight.",
+   "female": "Similar but browner and paler grey, with the same pink bill and white tail flashes.",
+   "diet": [
+    "Seeds",
+    "Millet",
+    "Insects",
+    "Berries"
+   ],
+   "habitat": "Coniferous and mixed forest in summer; feeders, thickets, and woodland edge in winter."
+  },
+  {
+   "name": "European Starling",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 40,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 40.1% of Ohio checklists at peak season (eBird).",
+   "about": "All 200 million North American starlings descend from about 100 birds released in Central Park in the 1890s. A superb mimic, an aggressive cavity competitor that displaces native birds, and the author of the astonishing swirling murmurations of winter.",
+   "male": "Winter: blackish and covered in white spots, with a dark bill. Summer: glossy iridescent green-purple with a bright yellow bill.",
+   "female": "Same seasonal changes, slightly less glossy. In breeding condition his bill base is blue, hers is pink.",
+   "diet": [
+    "Insects",
+    "Grain",
+    "Fruit",
+    "Refuse",
+    "Suet"
+   ],
+   "habitat": "Cities, farms, suburbs, and fields. Nests in any cavity in any structure."
+  },
+  {
+   "name": "House Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 40,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 40.3% of Ohio checklists at peak season (eBird).",
+   "about": "Introduced to Brooklyn in 1851 and now among the most widespread birds on Earth. It has lived alongside humans since the dawn of agriculture, and is oddly now declining in many cities for reasons nobody fully understands.",
+   "male": "Grey crown, chestnut nape, black bib, white cheek, and a streaked brown back. Bib size signals dominance.",
+   "female": "Plain dusty brown, streaked above, with a buff eyebrow behind the eye and no bib at all.",
+   "diet": [
+    "Seeds",
+    "Grain",
+    "Bread",
+    "Insects"
+   ],
+   "habitat": "Cities, suburbs, farms, and feedlots. Almost never found away from human settlement."
+  },
+  {
+   "name": "Common Yellowthroat",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 39,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 38.7% of Ohio checklists at peak season (eBird).",
+   "about": "The little masked bandit of the marsh, and one of the most widespread warblers on the continent. Its rolling 'witchety-witchety-witchety' comes from deep in the cattails, and the singer is maddeningly hard to actually see.",
+   "male": "Olive above with a bright yellow throat and a bold black bandit's mask edged in white above.",
+   "female": "Olive with a yellow throat and no mask at all \u2014 plainer, and easy to puzzle over.",
+   "diet": [
+    "Insects",
+    "Spiders",
+    "Caterpillars",
+    "Beetles"
+   ],
+   "habitat": "Marshes, wet thickets, and any dense low vegetation near water. Also drier overgrown fields."
+  },
+  {
+   "name": "White-throated Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 39,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 38.7% of Ohio checklists at peak season (eBird).",
+   "about": "Whistles a clear, plaintive 'Oh-sweet-Canada-Canada' that is the sound of the northern woods. Comes in two permanent morphs \u2014 white-striped and tan-striped \u2014 and, oddly, each almost always mates with the opposite type.",
+   "male": "Bold black-and-white striped crown, a crisp white throat patch, and a bright yellow spot between eye and bill.",
+   "female": "Same pattern; the tan-striped morph is duller in both sexes, so morph matters more than sex.",
+   "diet": [
+    "Seeds",
+    "Berries",
+    "Insects",
+    "Millet"
+   ],
+   "habitat": "Forest understory, thickets, and brushy edges. Very common under winter feeders in the East."
+  },
+  {
+   "name": "Barn Swallow",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 38,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 37.6% of Ohio checklists at peak season (eBird).",
+   "about": "The most widespread swallow on Earth, and one of the most thoroughly tied to us \u2014 it has almost entirely abandoned caves and cliffs in favor of barns, bridges, and culverts.",
+   "male": "Deep steel-blue above, rusty-orange throat, buff underparts, and a long deeply forked tail with white spots.",
+   "female": "Same pattern but with shorter tail streamers and paler underparts. Males with the longest tails get the best mates.",
+   "diet": [
+    "Flying insects",
+    "Flies",
+    "Beetles",
+    "Mosquitoes"
+   ],
+   "habitat": "Open country near water \u2014 farms, fields, and marshes. Nests almost exclusively on human structures."
+  },
+  {
+   "name": "Northern House Wren",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 38,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 38.3% of Ohio checklists at peak season (eBird).",
+   "about": "Tiny, brown, and utterly ferocious \u2014 it will pierce the eggs of any bird nesting nearby, including other wrens, to clear the neighborhood of competitors. Males build several dummy nests for the female to choose from.",
+   "male": "Small, plain grey-brown with fine barring on the wings and tail, a faint eyebrow, and a frequently cocked tail.",
+   "female": "Identical to the male. She picks one of his dummy nests and finishes it herself.",
+   "diet": [
+    "Insects",
+    "Spiders",
+    "Caterpillars",
+    "Beetles"
+   ],
+   "habitat": "Thickets, brushy edges, gardens, and backyards. Uses nest boxes, old boots, mailboxes \u2014 almost any cavity."
+  },
+  {
+   "name": "Eastern Wood-Pewee",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 37,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 37.1% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "House Finch",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 37,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 37.0% of Ohio checklists at peak season (eBird).",
+   "about": "A western bird, illegally sold in New York as the 'Hollywood Finch' and released around 1940 when the law caught up. Those few birds seeded the entire eastern population, which has since met the westward-spreading originals.",
+   "male": "Rosy-red head, breast and rump with a brown streaked back. Red intensity depends on diet \u2014 redder males are healthier.",
+   "female": "Plain grey-brown with blurry streaking below and no distinct face pattern at all.",
+   "diet": [
+    "Seeds",
+    "Buds",
+    "Berries",
+    "Sunflower seeds"
+   ],
+   "habitat": "Towns, suburbs, farms, and parks. Nests in shrubs, hanging baskets, and building crevices."
+  },
+  {
+   "name": "Red-eyed Vireo",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 37,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 37.2% of Ohio checklists at peak season (eBird).",
+   "about": "Nicknamed 'the preacher bird' \u2014 a single male can deliver over 20,000 song phrases in one day, still going in the noon heat when every other bird has gone quiet. One of the most abundant birds in eastern forests.",
+   "male": "Olive-green above, white below, with a grey crown, a bold white eyebrow bordered in black, and a red eye.",
+   "female": "Identical to the male. The red iris looks dark in poor light and takes a year to develop.",
+   "diet": [
+    "Caterpillars",
+    "Insects",
+    "Berries"
+   ],
+   "habitat": "Deciduous forest canopy and woodland edge. Forages methodically through the leaves, high up."
+  },
+  {
+   "name": "Yellow-rumped Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 37,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 37.3% of Ohio checklists at peak season (eBird).",
+   "about": "Nicknamed 'butter-butt'. Uniquely among warblers it can digest the waxes in bayberry and wax myrtle, which lets it winter far north of every other warbler \u2014 often the only one you'll see in a northern January.",
+   "male": "Blue-grey with black streaking, a yellow crown, yellow side patches, and a bright yellow rump. Eastern birds have a white throat.",
+   "female": "Browner and duller but with the same four yellow patches \u2014 crown, sides, and rump.",
+   "diet": [
+    "Insects",
+    "Bayberries",
+    "Wax myrtle",
+    "Berries"
+   ],
+   "habitat": "Conifer forest in summer; almost any woodland, thicket, or coastal scrub in winter."
+  },
+  {
+   "name": "Carolina Wren",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 36,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 36.5% of Ohio checklists at peak season (eBird).",
+   "about": "One of the loudest birds in North America for its size \u2014 the song carries half a mile. Pairs stay together year-round and duet. Hard winters with deep snow can crash the population overnight.",
+   "male": "Rich rufous above, warm buff below, with a bold white eyebrow and a cocked tail.",
+   "female": "Identical to the male, though only he sings the full ringing 'tea-kettle tea-kettle' song.",
+   "diet": [
+    "Insects",
+    "Spiders",
+    "Berries",
+    "Suet"
+   ],
+   "habitat": "Brushy tangles, woodland understory, brush piles, and shrubby gardens. Nests in almost any cavity or crevice."
+  },
+  {
+   "name": "Eastern Warbling Vireo",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 36,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 36.1% of Ohio checklists at peak season (eBird).",
+   "about": "About as plain a bird as exists in North America \u2014 and then it opens its mouth and delivers a rich, rolling warble. Birders learn it by voice and give up on the plumage.",
+   "male": "Drab grey-olive above, whitish below, with a pale eyebrow and no wingbars. Genuinely featureless.",
+   "female": "Identical to the male. Both sexes sing, which is unusual among vireos.",
+   "diet": [
+    "Caterpillars",
+    "Insects",
+    "Berries"
+   ],
+   "habitat": "Deciduous woodland, especially cottonwoods and willows along rivers, plus parks and orchards."
+  },
+  {
+   "name": "American Redstart",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 35,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 34.8% of Ohio checklists at peak season (eBird).",
+   "about": "Flashes its brightly patterned tail open and shut to startle insects into flight, then snatches them mid-air. Constantly in motion, pivoting and fanning \u2014 it never seems to sit still for a second.",
+   "male": "Glossy black with brilliant orange patches on the wings, tail, and sides. Unmistakable.",
+   "female": "Grey and olive with the same pattern picked out in lemon-yellow instead of orange.",
+   "diet": [
+    "Insects",
+    "Caterpillars",
+    "Berries"
+   ],
+   "habitat": "Deciduous second-growth woodland and thickets, especially near water."
+  },
+  {
+   "name": "Blue-gray Gnatcatcher",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 34,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 33.8% of Ohio checklists at peak season (eBird).",
+   "about": "Builds an exquisite nest of plant down bound with spider silk and shingled with lichen, so well camouflaged it looks like a knot on the branch. Never stops moving or flicking its long tail.",
+   "male": "Tiny, slim, blue-grey above and white below, with a white eye-ring and a long black tail edged in white. Thin black eyebrow when breeding.",
+   "female": "Similar but greyer and lacking the black eyebrow.",
+   "diet": [
+    "Small insects",
+    "Spiders",
+    "Larvae"
+   ],
+   "habitat": "Open deciduous woodland, oak scrub, and woodland edges."
+  },
+  {
+   "name": "Chipping Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 34,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 34.2% of Ohio checklists at peak season (eBird).",
+   "about": "A trim, tidy little sparrow of lawns and park edges. It historically lined its nest with horsehair, and now makes do with pet fur, string, and whatever fine fibers it can find.",
+   "male": "Bright rufous cap, a crisp white eyebrow over a black eye-line, and a clean grey unstreaked breast.",
+   "female": "Identical to the male. In winter the cap dulls to streaky brown and the bird becomes far less distinctive.",
+   "diet": [
+    "Seeds",
+    "Grass seeds",
+    "Insects"
+   ],
+   "habitat": "Open woodland, parks, lawns, and suburbs \u2014 especially short grass with trees nearby."
+  },
+  {
+   "name": "Indigo Bunting",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 30,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 30.3% of Ohio checklists at peak season (eBird).",
+   "about": "There is no blue pigment in the feathers at all \u2014 the color is a trick of light scattering, so in shade the bird looks flat black. Migrates at night, navigating by the stars, which it learns as a nestling.",
+   "male": "Dazzling electric blue all over in summer; brown with blue flecks in winter. Heavy conical bill.",
+   "female": "Plain warm brown with faint breast streaking and a whitish throat.",
+   "diet": [
+    "Seeds",
+    "Insects",
+    "Berries",
+    "Grass seeds"
+   ],
+   "habitat": "Brushy field edges, roadsides, and second growth. Sings from exposed high perches all summer long."
+  },
+  {
+   "name": "Carolina Chickadee",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 28,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 28.2% of Ohio checklists at peak season (eBird).",
+   "about": "The southern counterpart to the Black-capped, nearly identical to look at. Where their ranges meet they hybridize along a narrow band that has been creeping north with warming winters.",
+   "male": "Black cap and bib with white cheeks \u2014 like a Black-capped but slightly smaller, with a crisper bib edge and less white in the wing.",
+   "female": "Identical to the male. Best separated from Black-capped by its faster four-note song.",
+   "diet": [
+    "Insects",
+    "Seeds",
+    "Berries",
+    "Suet"
+   ],
+   "habitat": "Deciduous woods, swamps, parks, and suburbs across the Southeast."
+  },
+  {
+   "name": "Cedar Waxwing",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 28,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 27.9% of Ohio checklists at peak season (eBird).",
+   "about": "The most elegant bird at any feeder-less winter berry tree. Flocks pass berries down a line from bird to bird. They occasionally get drunk on fermented fruit and fly into windows.",
+   "male": "Silky fawn-grey with a black mask, a jaunty crest, a yellow-tipped tail, and red waxy droplets on the wing.",
+   "female": "Nearly identical. The red wing tips increase with age rather than differing by sex.",
+   "diet": [
+    "Berries",
+    "Fruit",
+    "Serviceberries",
+    "Insects"
+   ],
+   "habitat": "Fruiting trees anywhere \u2014 woods, parks, orchards, and suburbs. Highly nomadic, following the fruit crop."
+  },
+  {
+   "name": "Eastern Towhee",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 28,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 27.9% of Ohio checklists at peak season (eBird).",
+   "about": "A huge, dramatically marked sparrow that forages by kicking backward with both feet at once \u2014 a distinctive double-scratch that rustles loudly in the leaf litter. Sings 'drink-your-TEA!'",
+   "male": "Black hood, back and tail, with bright rufous sides and a white belly. Staring red eye.",
+   "female": "Identical pattern, but with warm brown replacing all the black \u2014 much more cryptic.",
+   "diet": [
+    "Seeds",
+    "Insects",
+    "Berries",
+    "Acorns"
+   ],
+   "habitat": "Dense shrubby undergrowth, thickets, and woodland edge with heavy leaf litter."
+  },
+  {
+   "name": "Ruby-throated Hummingbird",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 28,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 27.6% of Ohio checklists at peak season (eBird).",
+   "about": "The only hummingbird that breeds east of the Great Plains. It crosses 500 miles of open Gulf of Mexico in a single flight, powered entirely by fat it stored beforehand \u2014 doubling its body weight to do it.",
+   "male": "Iridescent emerald above with a brilliant ruby gorget that flashes or looks black depending on the light.",
+   "female": "Green above, white below, with a plain throat and white-tipped outer tail feathers. Slightly larger than the male.",
+   "diet": [
+    "Nectar",
+    "Small insects",
+    "Spiders",
+    "Tree sap"
+   ],
+   "habitat": "Gardens, woodland edge, and parks with tubular flowers. Readily comes to sugar-water feeders."
+  },
+  {
+   "name": "Eastern Kingbird",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 27,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 26.7% of Ohio checklists at peak season (eBird).",
+   "about": "The scientific name means 'tyrant of tyrants' and it earns it \u2014 a kingbird will ride a hawk's back, pecking, until it leaves. On the Amazon wintering grounds it becomes a peaceable fruit-eater in flocks.",
+   "male": "Slate-black above, white below, with a white terminal band across the tail like a dipped paintbrush.",
+   "female": "Identical to the male. The concealed red crown stripe is almost never seen.",
+   "diet": [
+    "Flying insects",
+    "Bees",
+    "Beetles",
+    "Berries"
+   ],
+   "habitat": "Open fields, orchards, and pond edges with scattered perches \u2014 fences, wires, and dead branches."
+  },
+  {
+   "name": "Palm Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 26,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 26.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Chimney Swift",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 25,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 25.0% of Ohio checklists at peak season (eBird).",
+   "about": "A 'flying cigar' that spends virtually its whole life airborne \u2014 it cannot perch, only cling to vertical walls. Autumn roosts of thousands funnel into a single chimney at dusk, a genuine spectacle.",
+   "male": "Uniform sooty grey-brown with a slightly paler throat, long curved wings, and a stubby tail. Chattering, twittering calls.",
+   "female": "Identical to the male; the sexes can't be separated in the field.",
+   "diet": [
+    "Flying insects",
+    "Gnats",
+    "Flies",
+    "Flying ants"
+   ],
+   "habitat": "The open sky above almost anything. Nests and roosts inside chimneys, air shafts, and hollow trees."
+  },
+  {
+   "name": "Magnolia Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 24,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 24.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Northern Parula",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 24,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 23.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Rose-breasted Grosbeak",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 24,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 24.2% of Ohio checklists at peak season (eBird).",
+   "about": "The male sings a rich, liquid warble \u2014 like a robin that took singing lessons \u2014 and unusually, he sings while sitting on the eggs. His arrival at feeders each May is a highlight of the eastern spring.",
+   "male": "Black head and back, white underparts, and a bold triangular blood-red bib. Massive pale bill.",
+   "female": "Heavily brown-streaked with a bold white eyebrow and two white wingbars \u2014 often mistaken for a big sparrow.",
+   "diet": [
+    "Seeds",
+    "Insects",
+    "Berries",
+    "Sunflower seeds"
+   ],
+   "habitat": "Mature deciduous forest and forest edge. A frequent spring feeder visitor."
+  },
+  {
+   "name": "Great Crested Flycatcher",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 23,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 23.4% of Ohio checklists at peak season (eBird).",
+   "about": "A cavity-nesting flycatcher with a strange habit: it lines the nest with shed snakeskin, or failing that, cellophane and plastic wrappers. The reason is still argued over \u2014 perhaps to deter predators.",
+   "male": "Grey throat, bright lemon-yellow belly, rufous tail and wing panels, and a shaggy crest.",
+   "female": "Identical to the male. Both are far more often heard \u2014 a loud rising 'WHEEP!' \u2014 than seen in the canopy.",
+   "diet": [
+    "Flies",
+    "Beetles",
+    "Caterpillars",
+    "Berries"
+   ],
+   "habitat": "Mature deciduous forest and wooded suburbs. Forages high; nests in natural cavities and nest boxes."
+  },
+  {
+   "name": "Ruby-crowned Kinglet",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 23,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 23.2% of Ohio checklists at peak season (eBird).",
+   "about": "A frantic scrap of a bird, never still, and possessed of a song wildly out of proportion to its size \u2014 loud, rich, and tumbling. The male's red crown is hidden until he gets excited, then it flares like a struck match.",
+   "male": "Drab olive with two white wingbars, a broken white eye-ring, and a scarlet crown patch usually kept concealed.",
+   "female": "Identical but with no red crown at all. Both flick their wings constantly.",
+   "diet": [
+    "Tiny insects",
+    "Spiders",
+    "Aphids",
+    "Berries"
+   ],
+   "habitat": "Conifers in summer; nearly any woodland, thicket, or garden on migration and in winter."
+  },
+  {
+   "name": "Black-capped Chickadee",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 22,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 22.2% of Ohio checklists at peak season (eBird).",
+   "about": "Every autumn it grows new brain cells in the hippocampus to store the locations of thousands of hidden seeds, then shrinks it back in spring. The 'chick-a-dee' call encodes threat level \u2014 more 'dee's means a more dangerous predator.",
+   "male": "Black cap and bib, crisp white cheeks, grey back, and buff-washed flanks.",
+   "female": "Identical to the male. The whistled 'fee-bee' song is given mostly by males.",
+   "diet": [
+    "Insects",
+    "Seeds",
+    "Berries",
+    "Suet",
+    "Spider eggs"
+   ],
+   "habitat": "Woodlands, thickets, parks, and wooded suburbs. The nucleus of winter mixed-species flocks."
+  },
+  {
+   "name": "Tennessee Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 22,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 21.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Eastern Phoebe",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 21,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 21.4% of Ohio checklists at peak season (eBird).",
+   "about": "One of the earliest migrants to return each spring, and the subject of the first bird-banding experiment in North America \u2014 Audubon tied silver thread to nestlings' legs in 1804 to prove they came back.",
+   "male": "Plain grey-brown above, whitish below, with a dark head and no eye-ring or wingbars. Wags its tail constantly.",
+   "female": "Identical to the male. Both are best told by the tail-wag and the raspy 'FEE-bee' call.",
+   "diet": [
+    "Flying insects",
+    "Wasps",
+    "Beetles",
+    "Berries"
+   ],
+   "habitat": "Woodland edges near water. Nests under bridges, eaves, and culverts \u2014 almost always on a man-made structure."
+  },
+  {
+   "name": "Golden-crowned Kinglet",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 21,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 20.6% of Ohio checklists at peak season (eBird).",
+   "about": "Weighs about as much as two pennies yet survives nights of \u221240\u00b0F in boreal forest, huddling together and shivering all night long. Constantly flicking its wings as it forages.",
+   "male": "Tiny olive-grey bird with a black-bordered crown stripe that is flaming orange in the center.",
+   "female": "Identical but the crown stripe is pure lemon-yellow with no orange.",
+   "diet": [
+    "Tiny insects",
+    "Springtails",
+    "Spider eggs",
+    "Aphids"
+   ],
+   "habitat": "Coniferous forest, especially spruce and fir. Spreads into mixed woods and suburbs in winter."
+  },
+  {
+   "name": "Swainson's Thrush",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 21,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 21.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Bay-breasted Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 20,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 20.3% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Chestnut-sided Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 20,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 19.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Eastern Bluebird",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 20,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 20.0% of Ohio checklists at peak season (eBird).",
+   "about": "Nearly lost to competition from introduced starlings and House Sparrows, then rescued by an army of volunteers who put up hundreds of thousands of nest boxes along 'bluebird trails'. One of conservation's quiet triumphs.",
+   "male": "Vivid royal blue above with a rich rusty-orange throat and breast and a white belly.",
+   "female": "Softer grey-blue above with a paler orange breast and a white eye-ring. Blue shows brightest in the wings and tail.",
+   "diet": [
+    "Insects",
+    "Caterpillars",
+    "Berries",
+    "Mealworms"
+   ],
+   "habitat": "Open country with scattered trees \u2014 pastures, orchards, golf courses, and roadsides. Depends on nest boxes."
+  },
+  {
+   "name": "Field Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 20,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 19.6% of Ohio checklists at peak season (eBird).",
+   "about": "Its song is a series of sweet, sad whistles that accelerate into a trill \u2014 often compared to a ping-pong ball dropped on a table. Disappearing as old fields are developed or replanted.",
+   "male": "Rusty cap, a plain grey face with a rufous eye-line, a white eye-ring, and a distinctive bright pink bill.",
+   "female": "Identical to the male. The pink bill is the giveaway for both sexes.",
+   "diet": [
+    "Seeds",
+    "Grass seeds",
+    "Insects"
+   ],
+   "habitat": "Overgrown fields, brushy pastures, and young second growth. Needs shrubby early-successional habitat."
+  },
+  {
+   "name": "Nashville Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 20,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 20.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Wood Thrush",
+   "emoji": "\ud83d\udc26",
+   "status": "common",
+   "freq": 20,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 20.3% of Ohio checklists at peak season (eBird).",
+   "about": "Its ethereal, fluting 'ee-oh-lay' is the signature sound of the eastern summer forest. Populations have fallen by more than half since 1970, hit from both ends by forest fragmentation here and deforestation in Central America.",
+   "male": "Warm rusty-brown head and back fading to olive, with a white breast boldly marked in large black spots.",
+   "female": "Identical to the male. Both sing, but only the male gives the full song.",
+   "diet": [
+    "Insects",
+    "Beetles",
+    "Berries",
+    "Snails"
+   ],
+   "habitat": "Interior deciduous forest with a moist shaded understory. Needs large unbroken woods."
+  },
+  {
+   "name": "Black-throated Green Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 19,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 19.4% of Ohio checklists at peak season (eBird).",
+   "about": "Sings a drowsy, buzzy 'zee-zee-zee-zoo-zee' that carries through the summer canopy. A male may sing it over 400 times an hour, which is a remarkable amount of enthusiasm for a bird that weighs a third of an ounce.",
+   "male": "Bright olive-green crown and back, a vivid yellow face, and a solid black throat and bib.",
+   "female": "Similar but with a mottled, incomplete black throat and duller yellow face.",
+   "diet": [
+    "Caterpillars",
+    "Insects",
+    "Spiders"
+   ],
+   "habitat": "Coniferous and mixed forest, especially hemlock. Forages high in the canopy."
+  },
+  {
+   "name": "Willow Flycatcher",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 19,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 19.1% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "American Tree Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 18,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 18.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Black-and-white Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 18,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 17.7% of Ohio checklists at peak season (eBird).",
+   "about": "Forages like a nuthatch, creeping up and down and around tree trunks \u2014 the only warbler that does. Its song is a thin, squeaky 'weesa-weesa-weesa' like a rusty wheel turning.",
+   "male": "Boldly striped black and white from head to tail, with a black throat and cheek.",
+   "female": "Same zebra striping but with a white throat and a grey cheek \u2014 cleaner, less contrasty.",
+   "diet": [
+    "Insects",
+    "Beetle larvae",
+    "Caterpillars",
+    "Spiders"
+   ],
+   "habitat": "Deciduous and mixed forest. Works along trunks and large limbs rather than in the foliage."
+  },
+  {
+   "name": "Blackburnian Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 18,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 17.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Purple Martin",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 18,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 17.6% of Ohio checklists at peak season (eBird).",
+   "about": "East of the Rockies, Purple Martins nest almost exclusively in human-supplied housing \u2014 a relationship that goes back to Indigenous peoples hanging hollow gourds. The eastern population is now entirely dependent on us.",
+   "male": "Glossy deep blue-purple all over \u2014 the only North American swallow with a dark belly.",
+   "female": "Grey-brown below with a pale collar and a duller, sooty-blue back.",
+   "diet": [
+    "Flying insects",
+    "Dragonflies",
+    "Beetles",
+    "Flies"
+   ],
+   "habitat": "Open areas near water, especially around martin houses and gourd racks in towns and farms."
+  },
+  {
+   "name": "Northern Rough-winged Swallow",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 17,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 17.2% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Belted Kingfisher",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 16,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 16.3% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Black-throated Blue Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 16,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 16.1% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Blackpoll Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 16,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 16.4% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Cape May Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 15,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 14.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Scarlet Tanager",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 15,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 15.5% of Ohio checklists at peak season (eBird).",
+   "about": "A shocking splash of red high in the summer canopy \u2014 and yet easy to miss, because it stays up top and sings a burry, hoarse song often described as a robin with a sore throat.",
+   "male": "Blazing scarlet body with jet-black wings and tail. Nothing else looks remotely like it.",
+   "female": "Olive-yellow with darker olive wings \u2014 completely different from the male, and easy to overlook.",
+   "diet": [
+    "Insects",
+    "Caterpillars",
+    "Beetles",
+    "Berries"
+   ],
+   "habitat": "Mature deciduous forest, especially oaks. Forages high in the canopy."
+  },
+  {
+   "name": "Swamp Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 15,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 14.8% of Ohio checklists at peak season (eBird).",
+   "about": "Wetland specialist with unusually long legs for a sparrow, letting it wade in shallow water and pick invertebrates from the surface \u2014 a niche no other sparrow occupies.",
+   "male": "Rich rufous cap, a plain grey face, a white throat, and rusty wings. Overall the most colorful of the streaky sparrows.",
+   "female": "Very similar, often with a more streaked crown and slightly duller tones.",
+   "diet": [
+    "Seeds",
+    "Aquatic invertebrates",
+    "Insects",
+    "Spiders"
+   ],
+   "habitat": "Cattail marshes, sedge meadows, and wet shrubby areas. Rarely far from water."
+  },
+  {
+   "name": "Acadian Flycatcher",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 14,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 14.1% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Brown Thrasher",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 14,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 13.9% of Ohio checklists at peak season (eBird).",
+   "about": "Holds the largest song repertoire of any North American bird \u2014 over 1,100 song types. Unlike the mockingbird, which repeats each phrase three or more times, the thrasher usually sings each one twice.",
+   "male": "Rich rufous above with a heavily black-streaked white breast, a long curved bill, and staring yellow eyes.",
+   "female": "Identical to the male. Both thrash through leaf litter with the bill, hence the name.",
+   "diet": [
+    "Beetles",
+    "Earthworms",
+    "Berries",
+    "Acorns"
+   ],
+   "habitat": "Dense thickets, hedgerows, and shrubby field edges. Sings from an exposed high perch."
+  },
+  {
+   "name": "Prothonotary Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 14,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 14.2% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "White-crowned Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 14,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 13.8% of Ohio checklists at peak season (eBird).",
+   "about": "Young males learn their song dialect from neighbors, producing local accents that differ from valley to valley. Migrating birds can stay awake and flying for two weeks straight.",
+   "male": "Bold black-and-white striped crown, a clean grey face and breast, and a bright pinkish-orange bill.",
+   "female": "Identical to the male. First-year birds have rusty-brown and tan crown stripes instead of black and white.",
+   "diet": [
+    "Seeds",
+    "Grasses",
+    "Berries",
+    "Insects"
+   ],
+   "habitat": "Brushy fields, hedgerows, chaparral, and gardens. Abundant in the West in winter."
+  },
+  {
+   "name": "Wilson's Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 13,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 12.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Canada Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 12,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 12.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Least Flycatcher",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 12,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 11.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Ovenbird",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 11,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 11.0% of Ohio checklists at peak season (eBird).",
+   "about": "Named for its domed, oven-shaped nest built right on the forest floor. The ringing 'TEACHER-TEACHER-TEACHER' crescendo is one of the loudest sounds in the eastern woods for a bird that looks like a small thrush.",
+   "male": "Olive-brown above, boldly spotted below, with a bold white eye-ring and an orange crown stripe bordered in black.",
+   "female": "Identical to the male. Walks \u2014 rather than hops \u2014 along the forest floor.",
+   "diet": [
+    "Insects",
+    "Ants",
+    "Snails",
+    "Worms"
+   ],
+   "habitat": "Interior deciduous forest with an open leaf-littered floor. Needs large unfragmented woods."
+  },
+  {
+   "name": "Yellow-throated Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 11,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 11.1% of Ohio checklists at peak season (eBird).",
+   "about": "Creeps along branches like a nuthatch, probing bark and pine needle clusters. One of the earliest warblers to return north each spring, sometimes in February on the Gulf Coast.",
+   "male": "Grey above, with a brilliant yellow throat, a bold black-and-white face pattern, and black side streaks.",
+   "female": "Identical to the male, perhaps marginally duller.",
+   "diet": [
+    "Insects",
+    "Spiders",
+    "Beetles",
+    "Caterpillars"
+   ],
+   "habitat": "Pine woods, cypress swamps, and sycamore-lined rivers in the Southeast."
+  },
+  {
+   "name": "Veery",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 10,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 10.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Blue-headed Vireo",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 9,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 9.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Brown Creeper",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 9,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 8.9% of Ohio checklists at peak season (eBird).",
+   "about": "Spirals up a trunk from the base, then drops to the bottom of the next tree and starts again. So perfectly bark-camouflaged that it often goes unnoticed until it moves. Roosts tucked behind a slab of loose bark.",
+   "male": "Streaky brown above and silvery-white below, with a thin decurved bill and a stiff tail used as a prop.",
+   "female": "Identical to the male. Its high, thin song is at the very top of human hearing.",
+   "diet": [
+    "Insects",
+    "Spiders",
+    "Larvae hidden in bark"
+   ],
+   "habitat": "Mature forest with big rough-barked trees. Needs loose bark for its hammock-shaped nest."
+  },
+  {
+   "name": "Eastern Meadowlark",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 9,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 9.5% of Ohio checklists at peak season (eBird).",
+   "about": "The state bird of six states. Its flute-like, gurgling song is the defining sound of the western prairie \u2014 and Audubon named it 'neglecta' because everyone before him had overlooked it as just an Eastern Meadowlark.",
+   "male": "Brilliant yellow underparts crossed by a bold black V on the chest; cryptic brown streaked back.",
+   "female": "Identical to the male but slightly duller and smaller.",
+   "diet": [
+    "Insects",
+    "Grasshoppers",
+    "Seeds",
+    "Grain"
+   ],
+   "habitat": "Grassland, prairie, pasture, and hayfields. Sings from fenceposts and wires."
+  },
+  {
+   "name": "Hermit Thrush",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 9,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 9.1% of Ohio checklists at peak season (eBird).",
+   "about": "Sings what many consider the most beautiful song of any North American bird \u2014 a clear flute-like phrase, repeated at a different pitch each time. It can sing two notes at once using both halves of its syrinx.",
+   "male": "Warm brown above with a rusty tail it flicks upward, a spotted breast, and a bold white eye-ring.",
+   "female": "Identical to the male. The rusty tail contrasting with the browner back is the key mark.",
+   "diet": [
+    "Insects",
+    "Berries",
+    "Ants",
+    "Beetles"
+   ],
+   "habitat": "Coniferous and mixed forest floor in summer; woodland understory and thickets in winter."
+  },
+  {
+   "name": "Orchard Oriole",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 9,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 9.2% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Lincoln's Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 8.3% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Northern Mockingbird",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 7.8% of Ohio checklists at peak season (eBird).",
+   "about": "Can learn 200 songs in a lifetime, imitating other birds, frogs, car alarms, and squeaky gates. Unmated males sing through the night, often from a streetlight, to the despair of anyone trying to sleep.",
+   "male": "Grey above, pale below, with two white wingbars and huge white wing patches that flash in flight.",
+   "female": "Identical to the male. Both sexes aggressively defend territory, dive-bombing cats and people alike.",
+   "diet": [
+    "Insects",
+    "Berries",
+    "Fruit",
+    "Earthworms"
+   ],
+   "habitat": "Suburbs, parks, hedgerows, and open country with scattered shrubs. Thrives around people."
+  },
+  {
+   "name": "Northern Waterthrush",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 8.2% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Yellow-throated Vireo",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 8,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 8.1% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Blue-winged Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 7,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 6.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Fox Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 7,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 7.1% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Red-breasted Nuthatch",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 7,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 7.0% of Ohio checklists at peak season (eBird).",
+   "about": "Smears sticky conifer resin around its nest hole \u2014 possibly to deter predators and insects \u2014 and then must dive through the gap without touching the sides. In poor cone years it 'irrupts' far south of its normal range.",
+   "male": "Blue-grey above, rusty-orange below, with a black cap and a bold white eyebrow over a black eye-line.",
+   "female": "Same pattern but with a grey cap and paler, buffier underparts.",
+   "diet": [
+    "Conifer seeds",
+    "Insects",
+    "Suet",
+    "Sunflower seeds"
+   ],
+   "habitat": "Coniferous and mixed forest. Wanders widely into deciduous woods and feeders during irruption years."
+  },
+  {
+   "name": "Rock Pigeon",
+   "emoji": "\ud83d\udd4a\ufe0f",
+   "status": "uncommon",
+   "freq": 7,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 7.4% of Ohio checklists at peak season (eBird).",
+   "about": "Domesticated for thousands of years as food, messenger, and racer, then gone feral worldwide. Navigates using the sun, the Earth's magnetic field, and possibly infrasound \u2014 a genuinely remarkable animal we mostly ignore.",
+   "male": "Endlessly variable, but classically blue-grey with a white rump, two black wingbars, and an iridescent green-purple neck.",
+   "female": "Nearly identical, with slightly less neck iridescence. Both sexes feed young on 'crop milk'.",
+   "diet": [
+    "Seeds",
+    "Grain",
+    "Bread",
+    "Refuse"
+   ],
+   "habitat": "Cities, bridges, farmyards, and grain elevators \u2014 skyscrapers substitute for ancestral cliffs."
+  },
+  {
+   "name": "White-eyed Vireo",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 7,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 7.4% of Ohio checklists at peak season (eBird).",
+   "about": "A skulker of dense thickets with a loud, explosive, oddly mechanical song that often starts and ends with a sharp 'chick!'. Frequently mimics snatches of other species' calls.",
+   "male": "Olive above with yellow 'spectacles', two white wingbars, yellow flanks, and a startling white iris.",
+   "female": "Identical to the male, white iris and all. Juveniles have dark eyes that pale over the first year.",
+   "diet": [
+    "Insects",
+    "Caterpillars",
+    "Berries"
+   ],
+   "habitat": "Dense shrubby thickets, briar tangles, and overgrown fields. Heard far more often than seen."
+  },
+  {
+   "name": "Yellow-billed Cuckoo",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 7,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 6.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Hooded Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 6,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 6.4% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Horned Lark",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 6,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 6.4% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Marsh Wren",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 6,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 5.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Philadelphia Vireo",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 6,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 6.3% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Rusty Blackbird",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 6,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 5.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Sora",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 6,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 6.4% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Bank Swallow",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 5.1% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Cliff Swallow",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 5.2% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Common Nighthawk",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 5.1% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Louisiana Waterthrush",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 4.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Mourning Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 4.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Pine Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 4.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Savannah Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 4.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Wild Turkey",
+   "emoji": "\ud83e\udd83",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 4.6% of Ohio checklists at peak season (eBird).",
+   "about": "Nearly extirpated by 1900, then restored by one of the great wildlife comebacks \u2014 trap-and-transfer programs put them back across the continent. Can run 25 mph and fly, briefly, at 55.",
+   "male": "Iridescent bronze body, bare red-and-blue head with wattles and a fleshy snood, and a bristly 'beard' on the chest. Fans the tail in display.",
+   "female": "Smaller, duller, and browner, with a bluish bare head and usually no beard. Far more cryptic than the male.",
+   "diet": [
+    "Acorns",
+    "Seeds",
+    "Insects",
+    "Berries",
+    "Small vertebrates"
+   ],
+   "habitat": "Mature forest next to clearings and fields. Forages on the ground; roosts in big trees at night."
+  },
+  {
+   "name": "Winter Wren",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 5.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Yellow-breasted Chat",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 5,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 5.3% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Bobolink",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 4,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 3.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Dickcissel",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 4,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 3.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Gray-cheeked Thrush",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 4,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 4.3% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Alder Flycatcher",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 3.3% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "American Pipit",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 2.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Black-billed Cuckoo",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 3.2% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Cerulean Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 2.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Grasshopper Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 2.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Pine Siskin",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 3.2% of Ohio checklists at peak season (eBird).",
+   "about": "An irruptive nomad \u2014 in years when the northern conifer cone crop fails, siskins pour south by the millions, then may vanish entirely the following winter. Can pack enough seed in its crop to survive a night at \u221270\u00b0F.",
+   "male": "Heavily streaked brown and buff with subtle yellow flashes in the wings and tail, and a sharply pointed bill.",
+   "female": "Identical to the male, typically with less yellow in the wing.",
+   "diet": [
+    "Conifer seeds",
+    "Nyjer",
+    "Thistle",
+    "Alder seeds"
+   ],
+   "habitat": "Conifer forest; in irruption years, feeders and weedy fields far to the south."
+  },
+  {
+   "name": "Prairie Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 3.4% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Purple Finch",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 3.0% of Ohio checklists at peak season (eBird).",
+   "about": "Roger Tory Peterson memorably described the male as looking 'like a sparrow dipped in raspberry juice'. Steadily losing ground to the introduced House Finch wherever the two overlap.",
+   "male": "Raspberry-red wash over the whole head, breast and back \u2014 richer and more extensive than a House Finch.",
+   "female": "Boldly streaked brown and white with a strong white eyebrow and dark cheek patch \u2014 a much crisper face than a female House Finch.",
+   "diet": [
+    "Seeds",
+    "Buds",
+    "Berries",
+    "Insects"
+   ],
+   "habitat": "Coniferous and mixed forest; feeders and woodland edge in winter."
+  },
+  {
+   "name": "Yellow-bellied Flycatcher",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 3,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 2.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Blue Grosbeak",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Connecticut Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Eastern Whip-poor-will",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Henslow's Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Kentucky Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 2.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Lapland Longspur",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Orange-crowned Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 2,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.7% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Snow Bunting",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 2,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 2.2% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Summer Tanager",
+   "emoji": "\ud83d\udc26",
+   "status": "uncommon",
+   "freq": 2,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 2.4% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Bell's Vireo",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 0.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Brown Booby",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 0.9% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Evening Grosbeak",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 0.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Golden-winged Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Harris's Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 0.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Kirtland's Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 0.8% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Lark Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Nelson's Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Northern Shrike",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 0.6% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Olive-sided Flycatcher",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.3% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Redpoll",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 0.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Ring-necked Pheasant",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 0.7% of Ohio checklists at peak season (eBird).",
+   "about": "An Asian import, released for hunting since the 1880s and now thoroughly naturalized across the northern farm belt. The male's crowing and explosive, clattering flush are unmistakable.",
+   "male": "Spectacular copper body flecked with black, an iridescent green head, bold red face wattles, a white neck ring, and an enormously long pointed tail.",
+   "female": "Mottled buff-brown throughout with a shorter pointed tail \u2014 beautifully camouflaged against stubble and grass.",
+   "diet": [
+    "Seeds",
+    "Grain",
+    "Insects",
+    "Berries",
+    "Roots"
+   ],
+   "habitat": "Farmland with weedy ditches, hedgerows, and grassy cover. Depends on agricultural landscapes."
+  },
+  {
+   "name": "Sedge Wren",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.0% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Vesper Sparrow",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.5% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Worm-eating Warbler",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.3% of Ohio checklists at peak season (eBird)."
+  },
+  {
+   "name": "Yellow-headed Blackbird",
+   "emoji": "\ud83d\udc26",
+   "status": "rare",
+   "freq": 1,
+   "tags": [
+    "songbird"
+   ],
+   "region": "Reported on 1.4% of Ohio checklists at peak season (eBird)."
+  }
+ ]
+}

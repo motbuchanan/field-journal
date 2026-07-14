@@ -1,0 +1,1024 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Journal — Bird Tracker</title>
+<meta name="theme-color" content="#8b4513">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icon.svg" type="image/svg+xml">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=Special+Elite&family=IM+Fell+English:ital@0;1&family=Cutive+Mono&display=swap" rel="stylesheet">
+<style>
+:root {
+  --paper:#f2e8d5; --paper-dark:#e8d9be;
+  --leather:#8b4513; --leather-dk:#5c2d0a;
+  --ink:#1a0e04; --ink-faded:#5a3e28;
+  --ruled:rgba(140,180,220,0.22); --margin:rgba(200,100,100,0.28);
+  --gold:#c8962a; --gold-lt:#f5d880;
+  --moss:#3d6a1a; --rust:#8b3010;
+  --muted:#8b7050; --tape:rgba(255,240,180,0.55);
+}
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  background:var(--paper); font-family:'IM Fell English',Georgia,serif;
+  color:var(--ink); min-height:100vh;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");
+}
+
+/* ═══ SETUP / REGION PICKER ═══ */
+#setup-view { max-width:480px; margin:0 auto; padding:0 0 60px; }
+.setup-cover {
+  background:var(--leather); padding:56px 24px 28px; position:relative;
+  box-shadow:0 3px 12px rgba(0,0,0,0.3);
+  background-image:repeating-linear-gradient(90deg,rgba(0,0,0,0.03) 0,rgba(0,0,0,0.03) 1px,transparent 1px,transparent 10px);
+}
+.setup-cover::before { content:''; position:absolute; inset:8px; border:1px solid rgba(255,220,150,0.2); pointer-events:none; }
+.setup-cover h1 {
+  font-family:'Special Elite',serif; font-size:30px; color:#f5e6c8;
+  line-height:1.1; text-shadow:1px 2px 6px rgba(0,0,0,0.5);
+}
+.setup-cover h1 em { font-family:'Caveat',cursive; font-style:normal; font-size:36px; color:var(--gold-lt); }
+.setup-cover p { font-family:'Caveat',cursive; font-size:15px; color:rgba(255,220,150,0.7); margin-top:8px; }
+.setup-body { padding:24px 20px; }
+.setup-label {
+  font-family:'Caveat',cursive; font-size:13px; color:var(--leather);
+  text-transform:uppercase; letter-spacing:1px; margin-bottom:10px;
+}
+.pack-card {
+  display:flex; align-items:center; gap:12px;
+  border:1.5px solid rgba(139,112,80,0.3); background:rgba(200,160,80,0.05);
+  padding:14px; margin-bottom:8px; cursor:pointer; transition:all .18s;
+}
+.pack-card:hover { border-color:var(--gold); background:rgba(200,150,42,0.08); }
+.pack-card.soon { opacity:.45; cursor:default; }
+.pack-card.soon:hover { border-color:rgba(139,112,80,0.3); background:rgba(200,160,80,0.05); }
+.pack-emoji { font-size:26px; flex-shrink:0; }
+.pack-info { flex:1; min-width:0; }
+.pack-name { font-family:'Special Elite',serif; font-size:15px; color:var(--ink); }
+.pack-sub { font-family:'IM Fell English',serif; font-style:italic; font-size:11px; color:var(--muted); margin-top:2px; }
+.pack-count {
+  font-family:'Caveat',cursive; font-size:13px; color:var(--moss);
+  border:1px solid rgba(61,106,26,0.3); background:rgba(61,106,26,0.08);
+  padding:1px 8px; flex-shrink:0;
+}
+.pack-count.soon { color:var(--muted); border-color:rgba(139,112,80,0.3); background:transparent; }
+.setup-note {
+  font-family:'IM Fell English',serif; font-size:12px; color:var(--muted);
+  line-height:1.6; margin-top:16px; padding-top:14px;
+  border-top:1px solid rgba(139,112,80,0.2);
+}
+.setup-note a { color:var(--leather); cursor:pointer; text-decoration:underline; }
+
+/* ═══ LIST VIEW ═══ */
+#list-view {
+  display:none; max-width:480px; margin:0 auto; padding:0 0 100px; position:relative;
+  background-image:linear-gradient(var(--margin) 0,var(--margin) 100%);
+  background-size:1px 100%; background-position:44px 0; background-repeat:no-repeat;
+}
+.list-header {
+  padding:52px 20px 22px; position:relative;
+  box-shadow:0 3px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,220,150,0.1);
+  background-image:repeating-linear-gradient(90deg,rgba(0,0,0,0.03) 0,rgba(0,0,0,0.03) 1px,transparent 1px,transparent 10px);
+  background-color:var(--leather); transition:background-color 2s ease;
+}
+.list-header::before { content:''; position:absolute; inset:8px; border:1px solid rgba(255,220,150,0.2); pointer-events:none; }
+.list-header::after { content:''; position:absolute; left:32px; top:0; bottom:0; width:2px; background:rgba(255,220,150,0.12); }
+.list-header.tod-dawn{background-color:#7a4a2a}
+.list-header.tod-morning{background-color:#6b5a1a}
+.list-header.tod-midday{background-color:#3a5a3a}
+.list-header.tod-afternoon{background-color:#5a3a1a}
+.list-header.tod-dusk{background-color:#4a2a4a}
+.list-header.tod-evening{background-color:#1a2a3a}
+.list-header.tod-night{background-color:#0e1a14}
+.list-header h1 {
+  font-family:'Special Elite',serif; font-size:28px; color:#f5e6c8;
+  line-height:1; text-shadow:1px 2px 6px rgba(0,0,0,0.5); position:relative;
+}
+.list-header h1 em { font-family:'Caveat',cursive; font-style:normal; font-size:34px; color:var(--gold-lt); }
+.list-subtitle { font-family:'Caveat',cursive; font-size:14px; color:rgba(255,220,150,0.6); margin-top:6px; position:relative; }
+.list-header-stamp {
+  position:absolute; top:14px; right:16px; width:52px; height:52px;
+  border:2px solid rgba(255,220,150,0.35); border-radius:50%;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  font-family:'Cutive Mono',monospace; font-size:6px; letter-spacing:1px;
+  color:rgba(255,220,150,0.45); text-align:center; line-height:1.5;
+}
+.list-header-stamp span { font-size:20px; display:block; }
+.tod-label {
+  position:absolute; bottom:14px; left:36px;
+  font-family:'Cutive Mono',monospace; font-size:7px; letter-spacing:2px;
+  color:rgba(255,220,150,0.45); text-transform:uppercase;
+}
+.header-tape {
+  display:block; height:20px; background:var(--tape); margin:0 56px;
+  transform:rotate(-0.4deg); box-shadow:0 1px 4px rgba(0,0,0,0.08); position:relative; z-index:1;
+}
+.region-bar {
+  display:flex; align-items:center; justify-content:space-between; gap:8px;
+  padding:6px 14px 6px 52px; background:rgba(139,69,19,0.05);
+  border-bottom:1px solid rgba(139,112,80,0.18);
+  font-family:'Cutive Mono',monospace; font-size:8px; letter-spacing:1.5px;
+  color:var(--muted); text-transform:uppercase;
+}
+.region-switch {
+  font-family:'Caveat',cursive; font-size:12px; text-transform:none;
+  letter-spacing:0; color:var(--leather); cursor:pointer;
+  background:none; border:none; text-decoration:underline; flex-shrink:0;
+}
+.filter-bar {
+  display:flex; gap:6px; padding:10px 14px 10px 52px; overflow-x:auto;
+  border-bottom:1px solid rgba(160,130,90,0.25); scrollbar-width:none;
+}
+.filter-bar::-webkit-scrollbar { display:none; }
+.filter-btn {
+  font-family:'Caveat',cursive; font-size:13px; padding:3px 10px;
+  border:1px solid rgba(139,112,80,0.35); background:transparent; color:var(--muted);
+  cursor:pointer; white-space:nowrap; transition:all .18s;
+}
+.filter-btn.active, .filter-btn:hover { background:var(--leather); color:#f5e6c8; border-color:var(--leather); }
+.search-bar { padding:8px 14px 8px 52px; border-bottom:1px solid rgba(160,130,90,0.2); }
+.search-bar input {
+  width:100%; background:rgba(200,160,80,0.08); border:1px solid rgba(139,112,80,0.25);
+  padding:7px 12px; font-family:'Caveat',cursive; font-size:15px; color:var(--ink); outline:none;
+}
+.search-bar input::placeholder { color:var(--muted); opacity:.6; }
+.search-bar input:focus { border-color:var(--gold); }
+.group-label {
+  padding:10px 14px 3px 52px; font-family:'Caveat',cursive; font-size:13px;
+  color:var(--muted); letter-spacing:1px;
+}
+.group-label::after {
+  content:''; display:block; height:1px; margin-top:3px; opacity:.35;
+  background:repeating-linear-gradient(90deg,var(--gold) 0,var(--gold) 3px,transparent 3px,transparent 7px);
+}
+.bird-card {
+  display:flex; align-items:center; padding:0 12px 0 0; gap:10px;
+  border-bottom:1px solid rgba(160,130,90,0.18); cursor:pointer;
+  transition:background .14s; position:relative; min-height:54px;
+  background-image:linear-gradient(var(--ruled) 0,var(--ruled) 100%);
+  background-size:100% 1px; background-position:0 27px; background-repeat:no-repeat;
+  animation:fadeSlideUp .28s ease both;
+}
+.bird-card:hover { background-color:rgba(200,150,40,0.07); }
+.bird-card-num {
+  width:44px; flex-shrink:0; text-align:center;
+  font-family:'Cutive Mono',monospace; font-size:9px; color:rgba(139,96,64,0.4); padding-top:2px;
+}
+.bird-icon {
+  width:40px; height:40px; background:var(--paper-dark); flex-shrink:0;
+  display:flex; align-items:center; justify-content:center; font-size:19px;
+  box-shadow:1px 1px 4px rgba(0,0,0,0.22); position:relative;
+}
+.bird-icon::after {
+  content:''; position:absolute; bottom:0; right:0;
+  border-style:solid; border-width:0 0 7px 7px;
+  border-color:transparent transparent rgba(0,0,0,0.14) transparent;
+}
+.bird-info { flex:1; min-width:0; padding:8px 0; }
+.bird-name {
+  font-family:'Special Elite',serif; font-size:14px; color:var(--ink);
+  white-space:nowrap; overflow:hidden; text-overflow:ellipsis; line-height:1.2;
+}
+.bird-meta { font-family:'IM Fell English',serif; font-style:italic; font-size:10px; color:var(--muted); margin-top:1px; }
+.badge { font-family:'Caveat',cursive; font-size:11px; padding:1px 7px; flex-shrink:0; }
+.badge.rare     { background:rgba(139,48,16,0.1);  color:var(--rust); border:1px solid rgba(139,48,16,0.28); }
+.badge.uncommon { background:rgba(200,150,42,0.1); color:#7a5a0a;     border:1px solid rgba(200,150,42,0.28); }
+.badge.common   { background:rgba(61,106,26,0.1);  color:var(--moss); border:1px solid rgba(61,106,26,0.28); }
+.seen-stamp {
+  font-family:'Caveat',cursive; font-size:12px; color:var(--moss);
+  flex-shrink:0; transform:rotate(-3deg);
+}
+.arrow { color:var(--gold); font-size:14px; font-family:serif; }
+.no-results { padding:50px 16px 50px 52px; font-family:'Caveat',cursive; font-size:16px; color:var(--muted); }
+.backup-row { display:flex; gap:8px; padding:20px 16px 0 52px; flex-wrap:wrap; }
+
+/* ═══ DETAIL VIEW ═══ */
+#detail-view {
+  display:none; max-width:480px; margin:0 auto; min-height:100vh; position:relative;
+  background-image:
+    repeating-linear-gradient(transparent,transparent 27px,var(--ruled) 27px,var(--ruled) 28px),
+    linear-gradient(var(--margin) 0,var(--margin) 100%);
+  background-size:100% 28px, 1px 100%;
+  background-position:0 120px, 54px 0;
+}
+#detail-view.visible { animation:fadeSlideUp .3s ease both; }
+.spiral-binding {
+  position:fixed; top:0; left:50%; transform:translateX(-240px);
+  width:18px; height:100vh; display:flex; flex-direction:column; align-items:center;
+  padding-top:130px; gap:16px; pointer-events:none; z-index:50;
+}
+.spiral-ring {
+  width:14px; height:14px; border:2px solid #8b7050; border-radius:50%;
+  background:#c8a870; box-shadow:inset 0 1px 2px rgba(0,0,0,0.3); flex-shrink:0;
+}
+.detail-back {
+  display:flex; align-items:center; gap:6px; padding:16px 16px 6px 64px;
+  font-family:'Caveat',cursive; font-size:16px; color:var(--muted);
+  cursor:pointer; background:none; border:none; width:100%; text-align:left;
+  position:relative; z-index:10;
+}
+.detail-back:hover { color:var(--leather); }
+.detail-back-arrow { font-size:20px; color:var(--leather); font-family:serif; }
+.detail-hero {
+  margin:4px 22px 0 64px; height:180px; position:relative;
+  box-shadow:2px 4px 10px rgba(0,0,0,0.22), -1px -1px 0 rgba(255,255,255,0.5);
+  transform:rotate(-0.4deg); background:var(--paper-dark);
+}
+.detail-hero::before {
+  content:''; position:absolute; top:-7px; left:18px; width:40px; height:14px;
+  background:var(--tape); transform:rotate(-1.5deg); z-index:5;
+}
+.detail-hero::after {
+  content:''; position:absolute; bottom:-7px; right:22px; width:40px; height:14px;
+  background:var(--tape); transform:rotate(1deg); z-index:5;
+}
+.hero-pattern {
+  position:absolute; inset:0;
+  background-image:repeating-linear-gradient(45deg,var(--paper-dark) 0,var(--paper-dark) 8px,rgba(160,130,90,0.07) 8px,rgba(160,130,90,0.07) 9px);
+  display:flex; align-items:center; justify-content:center;
+}
+.hero-emoji { font-size:76px; opacity:.28; }
+.detail-body { padding:14px 22px 100px 64px; position:relative; }
+.detail-order {
+  font-family:'Cutive Mono',monospace; font-size:8px; letter-spacing:2px;
+  color:var(--muted); text-transform:uppercase; margin:8px 0 2px;
+}
+.detail-title {
+  font-family:'Special Elite',serif; font-size:25px; color:var(--ink);
+  line-height:1.1; display:inline-block; position:relative;
+}
+.detail-title::after {
+  content:''; display:block; height:2px; background:var(--leather);
+  margin-top:3px; transform:scaleX(1.02) rotate(-0.2deg); transform-origin:left; opacity:.55;
+}
+.detail-sci { font-family:'IM Fell English',serif; font-style:italic; font-size:13px; color:var(--ink-faded); margin-top:4px; }
+.detail-status-row { display:flex; gap:6px; flex-wrap:wrap; margin:10px 0 14px; }
+.status-pill { font-family:'Caveat',cursive; font-size:13px; padding:2px 10px; }
+.status-pill.common   { background:rgba(61,106,26,0.1);  color:var(--moss); border:1px solid rgba(61,106,26,0.25); }
+.status-pill.uncommon { background:rgba(200,150,42,0.1); color:#7a5a0a;     border:1px solid rgba(200,150,42,0.25); }
+.status-pill.rare     { background:rgba(139,48,16,0.1);  color:var(--rust); border:1px solid rgba(139,48,16,0.25); }
+.status-pill.order    { background:rgba(60,80,120,0.07); color:#2a3a6a;     border:1px solid rgba(60,80,120,0.2); }
+.section-label {
+  font-family:'Caveat',cursive; font-size:12px; color:var(--leather);
+  letter-spacing:1px; text-transform:uppercase; margin:18px 0 4px; opacity:.85;
+}
+.section-text { font-family:'IM Fell English',serif; font-size:14px; line-height:1.7; }
+.stats-grid { display:grid; grid-template-columns:1fr 1fr; gap:8px; margin:4px 0 2px; }
+.stat-box { padding:8px 10px 10px; position:relative; box-shadow:1px 2px 5px rgba(0,0,0,0.15); }
+.stat-box:nth-child(1){background:#fef3a0;transform:rotate(-1deg)}
+.stat-box:nth-child(2){background:#b8e4c0;transform:rotate(.7deg)}
+.stat-box:nth-child(3){background:#ffd4a8;transform:rotate(-.4deg)}
+.stat-box:nth-child(4){background:#c8d8f0;transform:rotate(.9deg)}
+.stat-box::before { content:''; position:absolute; top:0; left:0; right:0; height:3px; background:rgba(0,0,0,0.07); }
+.stat-label {
+  font-family:'Cutive Mono',monospace; font-size:7px; letter-spacing:1px;
+  color:rgba(40,20,0,0.5); text-transform:uppercase; margin-bottom:3px;
+}
+.stat-value { font-family:'Caveat',cursive; font-size:16px; font-weight:700; line-height:1.1; }
+.sex-tabs { display:flex; border:1.5px solid rgba(139,69,19,0.35); margin-bottom:8px; }
+.sex-tab {
+  flex:1; padding:7px; font-family:'Caveat',cursive; font-size:14px;
+  text-align:center; cursor:pointer; border:none; background:transparent;
+  color:var(--muted); transition:all .18s;
+}
+.sex-tab.active { background:var(--leather); color:#f5e6c8; }
+.diet-tags { display:flex; flex-wrap:wrap; gap:6px; }
+.diet-tag {
+  font-family:'Cutive Mono',monospace; font-size:8px; letter-spacing:1px;
+  padding:4px 8px; border:1.5px solid rgba(139,69,19,0.38);
+  color:rgba(139,69,19,0.7); text-transform:uppercase;
+}
+.freq-bar { margin-top:6px; height:7px; background:rgba(160,130,90,0.15); overflow:hidden; }
+.freq-fill {
+  height:100%; transition:width 1s ease;
+  background:repeating-linear-gradient(90deg,var(--leather) 0,var(--leather) 3px,transparent 3px,transparent 5px);
+}
+.freq-labels {
+  display:flex; justify-content:space-between;
+  font-family:'Caveat',cursive; font-size:10px; color:var(--muted); margin-top:3px;
+}
+.seen-toggle {
+  display:block; width:100%; padding:11px; margin-bottom:8px;
+  border:1.5px solid rgba(61,106,26,0.4); background:transparent;
+  font-family:'Caveat',cursive; font-size:16px; color:var(--moss);
+  cursor:pointer; transition:all .18s;
+}
+.seen-toggle.seen { background:var(--moss); color:#f5e6c8; }
+
+/* ═══ FAB + PANEL ═══ */
+.fab {
+  position:fixed; bottom:28px; right:max(16px,calc(50% - 225px));
+  width:54px; height:54px; background:var(--leather); border-radius:50%;
+  border:none; color:#f5e6c8; font-size:28px; cursor:pointer; font-family:serif;
+  box-shadow:0 3px 14px rgba(0,0,0,0.35); display:none;
+  align-items:center; justify-content:center; transition:all .2s; z-index:100; line-height:1;
+}
+.fab.show { display:flex; }
+.fab:hover { background:var(--gold); transform:scale(1.08); color:var(--ink); }
+#panel-overlay { display:none; position:fixed; inset:0; background:rgba(26,14,4,0.5); z-index:200; }
+#panel-overlay.open { display:block; }
+#action-panel {
+  position:fixed; bottom:0; left:0; right:0; max-width:480px; margin:0 auto;
+  background:var(--paper); border-top:3px solid var(--leather); z-index:300;
+  transform:translateY(100%); transition:transform .35s cubic-bezier(.32,.72,0,1);
+  max-height:90vh; overflow-y:auto;
+}
+#action-panel.open { transform:translateY(0); }
+.panel-handle { width:36px; height:4px; background:var(--muted); border-radius:2px; margin:12px auto 0; opacity:.35; }
+.panel-title {
+  font-family:'Special Elite',serif; font-size:15px; text-align:center;
+  padding:14px 0 12px; border-bottom:1px solid rgba(139,112,80,0.3);
+}
+.panel-body { padding:16px 20px 24px; }
+.panel-field { margin-bottom:12px; }
+.panel-label {
+  display:block; font-family:'Caveat',cursive; font-size:12px; letter-spacing:1px;
+  color:var(--muted); margin-bottom:4px; text-transform:uppercase;
+}
+.panel-hint { font-size:10px; opacity:.7; }
+.req { color:var(--rust); }
+.panel-input {
+  width:100%; background:rgba(200,160,80,0.08); border:1px solid rgba(139,112,80,0.28);
+  padding:9px 12px; font-family:'IM Fell English',serif; font-size:15px;
+  color:var(--ink); outline:none; transition:border-color .18s; resize:vertical;
+}
+.panel-input:focus { border-color:var(--gold); }
+.panel-error { font-family:'Caveat',cursive; font-size:12px; color:var(--rust); min-height:16px; margin-bottom:6px; }
+.panel-submit {
+  width:100%; padding:13px; background:var(--leather); color:#f5e6c8; border:none;
+  font-family:'Special Elite',serif; font-size:13px; letter-spacing:2px;
+  cursor:pointer; transition:background .18s; margin-top:6px;
+}
+.panel-submit:hover { background:var(--leather-dk); }
+.panel-clear {
+  padding:9px 12px; background:transparent; color:var(--muted);
+  border:1px solid rgba(139,112,80,0.3); font-family:'Caveat',cursive;
+  font-size:12px; cursor:pointer; transition:all .18s;
+}
+.panel-clear:hover { border-color:var(--leather); color:var(--leather); }
+.version-badge {
+  position:fixed; bottom:8px; left:10px;
+  font-family:'Cutive Mono',monospace; font-size:8px; letter-spacing:1px;
+  color:var(--muted); opacity:.55; z-index:90; cursor:pointer;
+}
+.toast {
+  position:fixed; bottom:80px; left:50%; transform:translateX(-50%) translateY(20px);
+  background:var(--ink); color:var(--paper); padding:10px 18px;
+  font-family:'Caveat',cursive; font-size:15px; z-index:500;
+  opacity:0; pointer-events:none; transition:all .3s;
+}
+.toast.show { opacity:1; transform:translateX(-50%) translateY(0); }
+@keyframes fadeSlideUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
+</style>
+</head>
+<body>
+
+<!-- ═══ SETUP / REGION PICKER ═══ -->
+<div id="setup-view">
+  <div class="setup-cover">
+    <h1>Field <em>Journal</em></h1>
+    <p>A free birding life list &amp; sighting tracker</p>
+  </div>
+  <div class="setup-body">
+    <div class="setup-label">Choose your region</div>
+    <div id="pack-list"></div>
+    <div class="setup-note" id="setup-note">
+      Your sightings are saved on this device and are never sent anywhere.
+      You can add any species yourself, and switching regions later never erases your list.
+      <br><br>
+      Have a pack file? <a onclick="document.getElementById('pack-file').click()">Load it from your device</a>.
+      <input type="file" id="pack-file" accept=".json" style="display:none" onchange="loadPackFromFile(event)">
+    </div>
+  </div>
+</div>
+
+<!-- ═══ LIST VIEW ═══ -->
+<div id="list-view">
+  <div class="list-header">
+    <h1>Field <em>Journal</em></h1>
+    <div class="list-subtitle" id="list-subtitle"></div>
+    <div class="list-header-stamp"><span id="tod-emoji">🦅</span></div>
+    <div class="tod-label" id="tod-label"></div>
+  </div>
+  <div class="header-tape"></div>
+  <div class="region-bar">
+    <span id="region-name"></span>
+    <button class="region-switch" onclick="showSetup()">change region</button>
+  </div>
+  <div class="filter-bar" id="filter-bar">
+    <button class="filter-btn active" data-f="all">All</button>
+    <button class="filter-btn" data-f="seen">✓ Seen</button>
+    <button class="filter-btn" data-f="unseen">Not yet</button>
+    <button class="filter-btn" data-f="common">Common</button>
+    <button class="filter-btn" data-f="uncommon">Uncommon</button>
+    <button class="filter-btn" data-f="rare">Rare</button>
+    <button class="filter-btn" data-f="raptor">Raptors</button>
+    <button class="filter-btn" data-f="waterfowl">Waterfowl</button>
+    <button class="filter-btn" data-f="songbird">Songbirds</button>
+    <button class="filter-btn" data-f="woodpecker">Woodpeckers</button>
+  </div>
+  <div class="search-bar">
+    <input type="text" id="search-input" placeholder="Search species...">
+  </div>
+  <div id="bird-list"></div>
+  <div class="backup-row">
+    <button class="panel-clear" onclick="exportData()">⬇ Export my list</button>
+    <button class="panel-clear" onclick="document.getElementById('import-file').click()">⬆ Restore backup</button>
+    <input type="file" id="import-file" accept=".json" style="display:none" onchange="importData(event)">
+  </div>
+</div>
+
+<!-- ═══ DETAIL VIEW ═══ -->
+<div id="detail-view">
+  <div class="spiral-binding" id="spiral"></div>
+  <button class="detail-back" onclick="showList()">
+    <span class="detail-back-arrow">←</span> Back to Field Notes
+  </button>
+  <div class="detail-hero">
+    <div class="hero-pattern"><div class="hero-emoji" id="detail-emoji"></div></div>
+  </div>
+  <div class="detail-body">
+    <div class="detail-order" id="detail-order"></div>
+    <div class="detail-title" id="detail-title"></div>
+    <div class="detail-sci" id="detail-sci"></div>
+    <div class="detail-status-row" id="detail-badges"></div>
+
+    <div class="section-label">My Sighting</div>
+    <button class="seen-toggle" id="seen-toggle" onclick="toggleSeen()">✓ Mark as Seen</button>
+    <textarea class="panel-input" id="sighting-notes" rows="3"
+      placeholder="Where and when did you spot it? Weather, behavior, location..."
+      oninput="saveNotes(this.value)"></textarea>
+
+    <div id="detail-rich"></div>
+  </div>
+</div>
+
+<button class="fab" id="fab" onclick="openPanel()">+</button>
+<div class="version-badge" onclick="toast('Field Journal v3.0 · Jul 14')">v3.0 · Jul 14</div>
+<div class="toast" id="toast"></div>
+
+<!-- ═══ ADD SPECIES PANEL ═══ -->
+<div id="panel-overlay" onclick="closePanel()"></div>
+<div id="action-panel">
+  <div class="panel-handle"></div>
+  <div class="panel-title">Add a Species</div>
+  <div class="panel-body">
+    <div class="panel-field">
+      <label class="panel-label">Common Name <span class="req">*</span></label>
+      <input class="panel-input" id="new-name" type="text" placeholder="e.g. Sandhill Crane">
+    </div>
+    <div class="panel-field">
+      <label class="panel-label">Scientific Name <span class="panel-hint">(optional)</span></label>
+      <input class="panel-input" id="new-sci" type="text" placeholder="e.g. Antigone canadensis">
+    </div>
+    <div class="panel-field">
+      <label class="panel-label">Category</label>
+      <select class="panel-input" id="new-tag">
+        <option value="songbird">Songbird / Other</option>
+        <option value="waterfowl">Waterfowl</option>
+        <option value="raptor">Raptor</option>
+        <option value="woodpecker">Woodpecker</option>
+      </select>
+    </div>
+    <div class="panel-field">
+      <label class="panel-label">How common here?</label>
+      <select class="panel-input" id="new-status">
+        <option value="common">Common</option>
+        <option value="uncommon">Uncommon</option>
+        <option value="rare">Rare</option>
+      </select>
+    </div>
+    <div class="panel-field">
+      <label class="panel-label">Sighting notes <span class="panel-hint">(optional)</span></label>
+      <textarea class="panel-input" id="new-notes" rows="2" placeholder="Where / when / conditions..."></textarea>
+    </div>
+    <div class="panel-error" id="new-error"></div>
+    <button class="panel-submit" onclick="addSpecies()">ADD TO MY LIST</button>
+  </div>
+</div>
+
+<script>
+/* ══════════════════════════════════════════════════════════════
+   FIELD JOURNAL — BIRD TRACKER  v2.0
+   Pack-based architecture:
+     - Species data lives in packs/*.json, loaded at runtime
+     - Sightings are keyed by species NAME and stored separately,
+       so switching or adding packs never erases your list
+     - Everything saves on-device. No account, no cloud, no tracking.
+   ══════════════════════════════════════════════════════════════ */
+
+const VERSION = 'v3.0';
+const SK = { // versioned storage keys
+  pack:      'bft_v1_pack',
+  packMeta:  'bft_v1_packmeta',
+  sightings: 'bft_v1_sightings',
+  custom:    'bft_v1_custom'
+};
+
+// ── Guarded storage (falls back to memory if localStorage blocked) ──
+const mem = {};
+function store(k, v) {
+  try { localStorage.setItem(k, JSON.stringify(v)); }
+  catch(e) { mem[k] = v; }
+}
+function recall(k, fallback) {
+  try {
+    const raw = localStorage.getItem(k);
+    if (raw !== null) return JSON.parse(raw);
+  } catch(e) {
+    if (k in mem) return mem[k];
+  }
+  return fallback;
+}
+
+// ── State ────────────────────────────────────────────────────
+let SPECIES   = [];   // from the active pack
+let CUSTOM    = [];   // user-added species
+let SIGHTINGS = {};   // { "Northern Cardinal": { seen:true, notes:"..." } }
+let packMeta  = null; // { id, name, subtitle }
+let currentBird = null;
+let currentSex  = 'male';
+let currentFilter = 'all';
+
+// All species = pack + custom
+function allBirds() { return SPECIES.concat(CUSTOM); }
+function sighting(name) { return SIGHTINGS[name] || { seen:false, notes:'' }; }
+
+// ══════════════════════════════════════════════════════════════
+// PACK LOADING
+// ══════════════════════════════════════════════════════════════
+const FALLBACK_MANIFEST = {
+  packs: [
+    { id:'blank', name:'Start From Scratch', subtitle:'Empty list — add every species yourself', speciesCount:0, file:'pack-blank.json', status:'available' }
+  ]
+};
+
+async function loadManifest() {
+  try {
+    const res = await fetch('packs.json', { cache:'no-cache' });
+    if (!res.ok) throw new Error('no manifest');
+    return await res.json();
+  } catch(e) {
+    // Opened as a local file (file://) — fetch is blocked. Offer file-load instead.
+    return null;
+  }
+}
+
+function packEmoji(id) {
+  const m = {
+    'northeast-ohio':'🌾','blank':'📓','northeast':'🍁','southeast':'🌴',
+    'midwest':'🌽','northwest':'🌲','southwest':'🌵','california':'🌊','texas-oklahoma':'🤠'
+  };
+  return m[id] || '🦜';
+}
+
+async function renderPackList() {
+  const el = document.getElementById('pack-list');
+  const manifest = await loadManifest();
+
+  if (!manifest) {
+    // file:// mode — can't fetch. Show blank-start + file loader only.
+    el.innerHTML = `
+      <div class="pack-card" onclick="startBlank()">
+        <div class="pack-emoji">📓</div>
+        <div class="pack-info">
+          <div class="pack-name">Start From Scratch</div>
+          <div class="pack-sub">Build your own list — add every species yourself</div>
+        </div>
+        <div class="pack-count">0</div>
+      </div>`;
+    document.getElementById('setup-note').insertAdjacentHTML('afterbegin',
+      `<div style="color:var(--rust);margin-bottom:10px">
+        Region packs can't load from a downloaded file. Use the hosted version,
+        or load a pack file from your device below.
+      </div>`);
+    return;
+  }
+
+  el.innerHTML = manifest.packs.map(p => {
+    const soon = p.status === 'coming-soon';
+    const count = soon ? 'soon' : (p.speciesCount === 0 ? '0' : p.speciesCount);
+    return `
+      <div class="pack-card ${soon ? 'soon' : ''}" ${soon ? '' : `onclick="choosePack('${p.id}','${p.file}')"`}>
+        <div class="pack-emoji">${packEmoji(p.id)}</div>
+        <div class="pack-info">
+          <div class="pack-name">${p.name}</div>
+          <div class="pack-sub">${p.subtitle}</div>
+        </div>
+        <div class="pack-count ${soon ? 'soon' : ''}">${count}</div>
+      </div>`;
+  }).join('');
+}
+
+async function choosePack(id, file) {
+  try {
+    const res = await fetch(file, { cache:'no-cache' });
+    if (!res.ok) throw new Error('fetch failed');
+    const pack = await res.json();
+    installPack(pack);
+  } catch(e) {
+    toast("Couldn't load that pack.");
+  }
+}
+
+function startBlank() {
+  installPack({ id:'blank', name:'My Own List', subtitle:'Species you add yourself', species:[] });
+}
+
+function loadPackFromFile(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const pack = JSON.parse(ev.target.result);
+      if (!pack.species || !Array.isArray(pack.species)) throw new Error('bad pack');
+      installPack(pack);
+    } catch(err) { toast("That doesn't look like a pack file."); }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+}
+
+// Install a pack — sightings are NOT touched
+function installPack(pack) {
+  SPECIES  = pack.species || [];
+  packMeta = { id: pack.id, name: pack.name, subtitle: pack.subtitle || '' };
+  store(SK.pack, SPECIES);
+  store(SK.packMeta, packMeta);
+  showList();
+  renderList();
+  updateCount();
+  toast(SPECIES.length ? `${pack.name} loaded — ${SPECIES.length} species` : 'Blank list ready');
+}
+
+// ══════════════════════════════════════════════════════════════
+// VIEWS
+// ══════════════════════════════════════════════════════════════
+function showSetup() {
+  document.getElementById('setup-view').style.display = 'block';
+  document.getElementById('list-view').style.display  = 'none';
+  document.getElementById('detail-view').style.display = 'none';
+  document.getElementById('fab').classList.remove('show');
+  renderPackList();
+  window.scrollTo(0,0);
+}
+function showList() {
+  document.getElementById('setup-view').style.display = 'none';
+  document.getElementById('list-view').style.display  = 'block';
+  document.getElementById('detail-view').style.display = 'none';
+  document.getElementById('fab').classList.add('show');
+  document.getElementById('region-name').textContent = packMeta ? packMeta.name : '';
+  window.scrollTo(0,0);
+}
+
+// ══════════════════════════════════════════════════════════════
+// LIST
+// ══════════════════════════════════════════════════════════════
+const GROUPS = {
+  waterfowl:'Waterfowl & Waterbirds', raptor:'Raptors',
+  woodpecker:'Woodpeckers', songbird:'Songbirds & Others'
+};
+
+function renderList() {
+  const q = (document.getElementById('search-input').value || '').toLowerCase();
+  const list = document.getElementById('bird-list');
+  const birds = allBirds();
+
+  const filtered = birds.filter(b => {
+    const s = sighting(b.name);
+    let f = true;
+    if (currentFilter === 'seen')        f = s.seen;
+    else if (currentFilter === 'unseen') f = !s.seen;
+    else if (currentFilter !== 'all')    f = (b.tags || []).includes(currentFilter) || b.status === currentFilter;
+    const m = !q || b.name.toLowerCase().includes(q) || (b.sci||'').toLowerCase().includes(q);
+    return f && m;
+  });
+
+  if (!birds.length) {
+    list.innerHTML = `<div class="no-results">Your list is empty.<br>Tap + to add your first species.</div>`;
+    return;
+  }
+  if (!filtered.length) {
+    list.innerHTML = `<div class="no-results">No species match that.</div>`;
+    return;
+  }
+
+  const order = ['waterfowl','raptor','woodpecker','songbird'];
+  const grouped = {}; order.forEach(g => grouped[g] = []);
+  filtered.forEach(b => {
+    const g = order.find(x => (b.tags||[]).includes(x)) || 'songbird';
+    grouped[g].push(b);
+  });
+
+  let html = '', n = 0;
+  order.forEach(g => {
+    if (!grouped[g].length) return;
+    html += `<div class="group-label">${GROUPS[g]}</div>`;
+    grouped[g].forEach((b, i) => {
+      n++;
+      const s = sighting(b.name);
+      html += `
+        <div class="bird-card" style="animation-delay:${Math.min(i,12)*0.02}s" onclick="showDetail(${JSON.stringify(b.name).replace(/"/g,'&quot;')})">
+          <div class="bird-card-num">${String(n).padStart(2,'0')}</div>
+          <div class="bird-icon">${b.emoji || '🐦'}</div>
+          <div class="bird-info">
+            <div class="bird-name">${b.name}</div>
+            <div class="bird-meta">${b.sci || ''}</div>
+          </div>
+          ${b.status ? `<span class="badge ${b.status}">${b.status}</span>` : ''}
+          ${s.seen ? '<span class="seen-stamp">✓ seen</span>' : ''}
+          <span class="arrow">›</span>
+        </div>`;
+    });
+  });
+  list.innerHTML = html;
+}
+
+function updateCount() {
+  const birds = allBirds();
+  const seen = birds.filter(b => sighting(b.name).seen).length;
+  document.getElementById('list-subtitle').textContent =
+    `${birds.length} species · ✓ ${seen} spotted`;
+}
+
+// ══════════════════════════════════════════════════════════════
+// DETAIL
+// ══════════════════════════════════════════════════════════════
+function showDetail(name) {
+  const b = allBirds().find(x => x.name === name);
+  if (!b) return;
+  currentBird = b;
+  currentSex = 'male';
+
+  document.getElementById('detail-emoji').textContent = b.emoji || '🐦';
+  document.getElementById('detail-order').textContent = b.order || '';
+  document.getElementById('detail-title').textContent = b.name;
+  document.getElementById('detail-sci').textContent   = b.sci || '';
+
+  document.getElementById('detail-badges').innerHTML = [
+    b.status ? `<span class="status-pill ${b.status}">${b.status} here</span>` : '',
+    b.order  ? `<span class="status-pill order">${b.order}</span>` : ''
+  ].join('');
+
+  refreshSeen();
+  document.getElementById('sighting-notes').value = sighting(b.name).notes || '';
+
+  // Rich pack data — only shown if the pack provides it
+  const rich = document.getElementById('detail-rich');
+  let html = '';
+
+  if (b.size || b.weight || b.wingspan || b.lifespan) {
+    html += `<div class="section-label">Field Measurements</div>
+      <div class="stats-grid">
+        <div class="stat-box"><div class="stat-label">Length</div><div class="stat-value">${b.size||'—'}</div></div>
+        <div class="stat-box"><div class="stat-label">Weight</div><div class="stat-value">${b.weight||'—'}</div></div>
+        <div class="stat-box"><div class="stat-label">Wingspan</div><div class="stat-value">${b.wingspan||'—'}</div></div>
+        <div class="stat-box"><div class="stat-label">Lifespan</div><div class="stat-value">${b.lifespan||'—'}</div></div>
+      </div>`;
+  }
+  if (b.about) html += `<div class="section-label">Field Notes</div><div class="section-text">${b.about}</div>`;
+  if (b.male || b.female) {
+    html += `<div class="section-label">Plumage</div>
+      <div class="sex-tabs">
+        <button class="sex-tab active" id="tab-male" onclick="setSex('male')">♂ Male</button>
+        <button class="sex-tab" id="tab-female" onclick="setSex('female')">♀ Female</button>
+      </div>
+      <div class="section-text" id="plumage-text"></div>`;
+  }
+  if (b.diet && b.diet.length) {
+    html += `<div class="section-label">Diet</div><div class="diet-tags">${
+      b.diet.map(d => `<span class="diet-tag">${d}</span>`).join('')}</div>`;
+  }
+  if (b.region || b.freq !== undefined) {
+    html += `<div class="section-label">Regional Presence</div>`;
+    if (b.region) html += `<div class="section-text">${b.region}</div>`;
+    if (b.freq !== undefined) {
+      html += `<div class="freq-bar"><div class="freq-fill" id="freq-fill" style="width:0%"></div></div>
+        <div class="freq-labels"><span>Scarce</span><span>Occasional</span><span>Abundant</span></div>`;
+    }
+  }
+  if (b.habitat) html += `<div class="section-label">Habitat &amp; Behavior</div><div class="section-text">${b.habitat}</div>`;
+
+  rich.innerHTML = html;
+  if (b.male || b.female) updatePlumage();
+  if (b.freq !== undefined) {
+    setTimeout(() => {
+      const f = document.getElementById('freq-fill');
+      if (f) f.style.width = b.freq + '%';
+    }, 100);
+  }
+
+  // Spiral rings
+  document.getElementById('spiral').innerHTML = '<div class="spiral-ring"></div>'.repeat(15);
+
+  document.getElementById('setup-view').style.display = 'none';
+  document.getElementById('list-view').style.display  = 'none';
+  const dv = document.getElementById('detail-view');
+  dv.style.display = 'block';
+  dv.classList.remove('visible'); void dv.offsetWidth; dv.classList.add('visible');
+  document.getElementById('fab').classList.remove('show');
+  window.scrollTo(0,0);
+}
+
+function setSex(s) {
+  currentSex = s;
+  const m = document.getElementById('tab-male');
+  const f = document.getElementById('tab-female');
+  if (m) m.classList.toggle('active', s === 'male');
+  if (f) f.classList.toggle('active', s === 'female');
+  updatePlumage();
+}
+function updatePlumage() {
+  const el = document.getElementById('plumage-text');
+  if (!el || !currentBird) return;
+  el.textContent = (currentSex === 'male' ? currentBird.male : currentBird.female)
+    || 'Not recorded in this pack.';
+}
+
+// ══════════════════════════════════════════════════════════════
+// SIGHTINGS
+// ══════════════════════════════════════════════════════════════
+function toggleSeen() {
+  if (!currentBird) return;
+  const s = sighting(currentBird.name);
+  SIGHTINGS[currentBird.name] = { seen: !s.seen, notes: s.notes || '' };
+  store(SK.sightings, SIGHTINGS);
+  refreshSeen();
+  renderList();
+  updateCount();
+}
+function refreshSeen() {
+  const btn = document.getElementById('seen-toggle');
+  if (!btn || !currentBird) return;
+  const seen = sighting(currentBird.name).seen;
+  btn.classList.toggle('seen', seen);
+  btn.textContent = seen ? '✓ Seen!' : '✓ Mark as Seen';
+}
+let notesTimer = null;
+function saveNotes(v) {
+  if (!currentBird) return;
+  const s = sighting(currentBird.name);
+  SIGHTINGS[currentBird.name] = { seen: s.seen, notes: v };
+  clearTimeout(notesTimer);
+  notesTimer = setTimeout(() => store(SK.sightings, SIGHTINGS), 600);
+}
+
+// ══════════════════════════════════════════════════════════════
+// ADD SPECIES
+// ══════════════════════════════════════════════════════════════
+function openPanel() {
+  document.getElementById('panel-overlay').classList.add('open');
+  document.getElementById('action-panel').classList.add('open');
+  document.getElementById('new-error').textContent = '';
+}
+function closePanel() {
+  document.getElementById('panel-overlay').classList.remove('open');
+  document.getElementById('action-panel').classList.remove('open');
+}
+
+function addSpecies() {
+  const name = document.getElementById('new-name').value.trim();
+  const err  = document.getElementById('new-error');
+  if (!name) { err.textContent = 'Common name is required.'; return; }
+  if (allBirds().some(b => b.name.toLowerCase() === name.toLowerCase())) {
+    err.textContent = 'That species is already in your list.'; return;
+  }
+
+  CUSTOM.push({
+    name,
+    sci:    document.getElementById('new-sci').value.trim(),
+    order:  '',
+    emoji:  '🐦',
+    status: document.getElementById('new-status').value,
+    tags:   [document.getElementById('new-tag').value],
+    custom: true
+  });
+
+  const notes = document.getElementById('new-notes').value.trim();
+  SIGHTINGS[name] = { seen: true, notes };  // if you're adding it, you saw it
+
+  store(SK.custom, CUSTOM);
+  store(SK.sightings, SIGHTINGS);
+
+  ['new-name','new-sci','new-notes'].forEach(id => document.getElementById(id).value = '');
+  closePanel();
+  renderList();
+  updateCount();
+  toast(name + ' added');
+}
+
+// ══════════════════════════════════════════════════════════════
+// EXPORT / IMPORT
+// ══════════════════════════════════════════════════════════════
+function exportData() {
+  const data = {
+    app:'field-journal-bird-tracker', schema:1, version:VERSION,
+    exported:new Date().toISOString(),
+    pack: packMeta, sightings: SIGHTINGS, custom: CUSTOM
+  };
+  const blob = new Blob([JSON.stringify(data,null,2)], { type:'application/json' });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = 'field-journal-backup.json';
+  a.click();
+  URL.revokeObjectURL(a.href);
+  toast('Backup downloaded');
+}
+
+function importData(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const d = JSON.parse(ev.target.result);
+      if (!d.sightings) throw new Error('bad backup');
+      SIGHTINGS = d.sightings || {};
+      CUSTOM    = d.custom || [];
+      store(SK.sightings, SIGHTINGS);
+      store(SK.custom, CUSTOM);
+      renderList();
+      updateCount();
+      const n = Object.values(SIGHTINGS).filter(s => s.seen).length;
+      toast(`Restored — ${n} sightings`);
+    } catch(err) { toast("Couldn't read that backup."); }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+}
+
+// ══════════════════════════════════════════════════════════════
+// CHROME
+// ══════════════════════════════════════════════════════════════
+function applyTimeOfDay() {
+  const h = new Date().getHours();
+  let cls, label, emoji;
+  if      (h>=5  && h<6)  { cls='tod-dawn';      label='Dawn';      emoji='🌅'; }
+  else if (h>=6  && h<11) { cls='tod-morning';   label='Morning';   emoji='🐦'; }
+  else if (h>=11 && h<14) { cls='tod-midday';    label='Midday';    emoji='☀️'; }
+  else if (h>=14 && h<17) { cls='tod-afternoon'; label='Afternoon'; emoji='🦅'; }
+  else if (h>=17 && h<20) { cls='tod-dusk';      label='Dusk';      emoji='🌆'; }
+  else if (h>=20 && h<22) { cls='tod-evening';   label='Evening';   emoji='🦉'; }
+  else                    { cls='tod-night';     label='Night';     emoji='🌙'; }
+  const hd = document.querySelector('.list-header');
+  hd.className = hd.className.split(' ').filter(c => !c.startsWith('tod-')).join(' ');
+  hd.classList.add(cls);
+  document.getElementById('tod-label').textContent = label;
+  document.getElementById('tod-emoji').textContent = emoji;
+}
+
+let toastTimer = null;
+function toast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 2200);
+}
+
+// Filters
+document.getElementById('filter-bar').addEventListener('click', e => {
+  const btn = e.target.closest('.filter-btn');
+  if (!btn) return;
+  currentFilter = btn.dataset.f;
+  document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderList();
+});
+document.getElementById('search-input').addEventListener('input', renderList);
+
+// ══════════════════════════════════════════════════════════════
+// BOOT
+// ══════════════════════════════════════════════════════════════
+// Service worker — cache key in sw.js MUST match the version badge above.
+function registerServiceWorker() {
+  if (!('serviceWorker' in navigator)) return;
+  if (location.protocol === 'file:') return;   // no SW on downloaded files
+  window.addEventListener('load', () => {
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  });
+}
+
+(function init() {
+  registerServiceWorker();
+  SIGHTINGS = recall(SK.sightings, {});
+  CUSTOM    = recall(SK.custom, []);
+  SPECIES   = recall(SK.pack, null);
+  packMeta  = recall(SK.packMeta, null);
+
+  applyTimeOfDay();
+
+  if (SPECIES && packMeta) {
+    // Returning user — go straight to their list
+    showList();
+    renderList();
+    updateCount();
+  } else {
+    SPECIES = [];
+    showSetup();
+  }
+})();
+</script>
+</body>
+</html>

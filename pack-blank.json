@@ -1,0 +1,9 @@
+{
+ "id": "blank",
+ "name": "Start From Scratch",
+ "subtitle": "Empty list \u2014 add every species yourself",
+ "schema": 1,
+ "speciesCount": 0,
+ "species": [],
+ "dataNote": "Species accounts describe plumage, diet, habitat and regional status. Body measurements are omitted rather than published unverified."
+}

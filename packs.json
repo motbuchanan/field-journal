@@ -1,0 +1,77 @@
+{
+ "schema": 1,
+ "packs": [
+  {
+   "id": "ohio",
+   "name": "Ohio",
+   "subtitle": "269 species \u2014 built from 12 years of eBird checklists",
+   "speciesCount": 269,
+   "file": "pack-ohio.json",
+   "status": "available"
+  },
+  {
+   "id": "blank",
+   "name": "Start From Scratch",
+   "subtitle": "Empty list \u2014 add every species yourself",
+   "speciesCount": 0,
+   "file": "pack-blank.json",
+   "status": "available"
+  },
+  {
+   "id": "northeast",
+   "name": "Northeast",
+   "subtitle": "New England, NY, PA, NJ",
+   "speciesCount": null,
+   "file": "pack-northeast.json",
+   "status": "coming-soon"
+  },
+  {
+   "id": "southeast",
+   "name": "Southeast",
+   "subtitle": "Carolinas, Georgia, Florida & the Gulf",
+   "speciesCount": null,
+   "file": "pack-southeast.json",
+   "status": "coming-soon"
+  },
+  {
+   "id": "midwest",
+   "name": "Midwest",
+   "subtitle": "Ohio Valley, Great Plains & prairie",
+   "speciesCount": null,
+   "file": "pack-midwest.json",
+   "status": "coming-soon"
+  },
+  {
+   "id": "northwest",
+   "name": "Northwest",
+   "subtitle": "Pacific NW & the Rockies",
+   "speciesCount": null,
+   "file": "pack-northwest.json",
+   "status": "coming-soon"
+  },
+  {
+   "id": "southwest",
+   "name": "Southwest",
+   "subtitle": "Desert Southwest, Arizona & New Mexico",
+   "speciesCount": null,
+   "file": "pack-southwest.json",
+   "status": "coming-soon"
+  },
+  {
+   "id": "california",
+   "name": "California",
+   "subtitle": "Coast, Sierra & Central Valley",
+   "speciesCount": null,
+   "file": "pack-california.json",
+   "status": "coming-soon"
+  },
+  {
+   "id": "texas-oklahoma",
+   "name": "Texas & Oklahoma",
+   "subtitle": "Hill Country, Gulf Coast & southern plains",
+   "speciesCount": null,
+   "file": "pack-texas-oklahoma.json",
+   "status": "coming-soon"
+  }
+ ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "Field Journal — Bird Tracker",
+  "short_name": "Field Journal",
+  "description": "A free offline birding life list and sighting tracker.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#f2e8d5",
+  "theme_color": "#8b4513",
+  "icons": [
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ]
+}
