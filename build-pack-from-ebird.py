@@ -86,6 +86,35 @@ RAPTOR_WORDS = (
 )
 WOODPECKER_WORDS = ('woodpecker','sapsucker','flicker')
 
+# ── Emoji by family ───────────────────────────────────────────────
+# Without this, every species the eBird export brings in that has no
+# written account renders as the same generic bird, and a list of 269
+# identical icons is useless to scan.
+EMOJI_RULES = [
+    (('goose','geese','brant'),                                          '🪿'),
+    (('swan',),                                                          '🦢'),
+    (('duck','teal','merganser','scaup','wigeon','pintail','shoveler',
+      'gadwall','redhead','canvasback','bufflehead','goldeneye','scoter',
+      'eider','mallard','bufflehead'),                                   '🦆'),
+    (('grebe','loon','cormorant','pelican','anhinga','coot'),            '🦆'),
+    (('heron','egret','bittern','crane','ibis','spoonbill','stork'),     '🦩'),
+    (('gull','tern','skimmer','kittiwake','jaeger'),                     '🕊️'),
+    (('dove','pigeon'),                                                  '🕊️'),
+    (('owl',),                                                           '🦉'),
+    (('hawk','eagle','falcon','kestrel','merlin','harrier','osprey',
+      'vulture','kite','goshawk','caracara','condor'),                   '🦅'),
+    (('turkey',),                                                        '🦃'),
+    (('quail','pheasant','grouse','bobwhite','prairie-chicken',
+      'ptarmigan'),                                                      '🐓'),
+]
+
+def emoji_for(name):
+    toks = set(re.split(r"[\s\-]+", name.lower()))
+    for words, glyph in EMOJI_RULES:
+        if toks & set(words):
+            return glyph
+    return '🐦'
+
 def group_for(name):
     # Tokenize on spaces AND hyphens, then match whole words only.
     # Substring matching is a trap here: "Yellowlegs" contains "owl",
@@ -226,9 +255,10 @@ def main():
         seen.add(name.lower())
 
         d = desc_by_key.get(name.lower()) or desc_by_key.get(match_key(name)) or {}
+        acct_emoji = d.get('emoji')
         entry = {
             'name':   name,
-            'emoji':  d.get('emoji', '🐦'),
+            'emoji':  acct_emoji if (acct_emoji and acct_emoji != '🐦') else emoji_for(name),
             'status': status_for(freq),
             'freq':   round(freq * 100),          # 0-100 for the app's bar
             'tags':   d.get('tags') or [group_for(name)],

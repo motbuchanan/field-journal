@@ -105,7 +105,7 @@ body {
 }
 .list-header-stamp span { font-size:20px; display:block; }
 .tod-label {
-  position:absolute; bottom:14px; left:36px;
+  position:absolute; top:72px; right:16px; width:52px; text-align:center;
   font-family:'Cutive Mono',monospace; font-size:7px; letter-spacing:2px;
   color:rgba(255,220,150,0.45); text-transform:uppercase;
 }
@@ -357,9 +357,12 @@ body {
 }
 .panel-clear:hover { border-color:var(--leather); color:var(--leather); }
 .version-badge {
-  position:fixed; bottom:8px; left:10px;
+  position:fixed; bottom:8px; left:8px;
   font-family:'Cutive Mono',monospace; font-size:8px; letter-spacing:1px;
-  color:var(--muted); opacity:.55; z-index:90; cursor:pointer;
+  color:var(--muted); z-index:90; cursor:pointer;
+  background:rgba(242,232,213,0.92); border:1px solid rgba(139,112,80,0.22);
+  padding:3px 7px; border-radius:2px;
+  box-shadow:0 1px 3px rgba(0,0,0,0.08);
 }
 .toast {
   position:fixed; bottom:80px; left:50%; transform:translateX(-50%) translateY(20px);
@@ -454,7 +457,7 @@ body {
 </div>
 
 <button class="fab" id="fab" onclick="openPanel()">+</button>
-<div class="version-badge" onclick="toast('Field Journal v3.0 · Jul 14')">v3.0 · Jul 14</div>
+<div class="version-badge" onclick="toast('Field Journal v3.1 · Jul 14')">v3.1 · Jul 14</div>
 <div class="toast" id="toast"></div>
 
 <!-- ═══ ADD SPECIES PANEL ═══ -->
@@ -507,7 +510,7 @@ body {
      - Everything saves on-device. No account, no cloud, no tracking.
    ══════════════════════════════════════════════════════════════ */
 
-const VERSION = 'v3.0';
+const VERSION = 'v3.1';
 const SK = { // versioned storage keys
   pack:      'bft_v1_pack',
   packMeta:  'bft_v1_packmeta',
@@ -566,10 +569,10 @@ async function loadManifest() {
 
 function packEmoji(id) {
   const m = {
-    'northeast-ohio':'🌾','blank':'📓','northeast':'🍁','southeast':'🌴',
+    'ohio':'🌾','northeast-ohio':'🌾','blank':'📓','northeast':'🍁','southeast':'🌴',
     'midwest':'🌽','northwest':'🌲','southwest':'🌵','california':'🌊','texas-oklahoma':'🤠'
   };
-  return m[id] || '🦜';
+  return m[id] || '🗺️';
 }
 
 async function renderPackList() {
