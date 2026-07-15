@@ -90,22 +90,25 @@ WOODPECKER_WORDS = ('woodpecker','sapsucker','flicker')
 # Without this, every species the eBird export brings in that has no
 # written account renders as the same generic bird, and a list of 269
 # identical icons is useless to scan.
+# ONLY assign a glyph where it is actually right. There is no heron
+# emoji and no gull emoji. Using a flamingo for a Great Blue Heron, or a
+# peace dove for a Ring-billed Gull, is not a near-miss — it is a pink
+# bird standing in for a grey one, and a birder reads that as an error.
+# A neutral bird is honest. A wrong bird is not.
 EMOJI_RULES = [
     (('goose','geese','brant'),                                          '🪿'),
     (('swan',),                                                          '🦢'),
     (('duck','teal','merganser','scaup','wigeon','pintail','shoveler',
       'gadwall','redhead','canvasback','bufflehead','goldeneye','scoter',
-      'eider','mallard','bufflehead'),                                   '🦆'),
-    (('grebe','loon','cormorant','pelican','anhinga','coot'),            '🦆'),
-    (('heron','egret','bittern','crane','ibis','spoonbill','stork'),     '🦩'),
-    (('gull','tern','skimmer','kittiwake','jaeger'),                     '🕊️'),
-    (('dove','pigeon'),                                                  '🕊️'),
+      'eider','mallard'),                                                '🦆'),
+    (('dove','pigeon'),                                                  '🕊️'),   # actually a dove
     (('owl',),                                                           '🦉'),
     (('hawk','eagle','falcon','kestrel','merlin','harrier','osprey',
       'vulture','kite','goshawk','caracara','condor'),                   '🦅'),
     (('turkey',),                                                        '🦃'),
-    (('quail','pheasant','grouse','bobwhite','prairie-chicken',
-      'ptarmigan'),                                                      '🐓'),
+    (('quail','pheasant','grouse','bobwhite','ptarmigan'),               '🐓'),
+    # herons, egrets, cranes, gulls, terns, shorebirds, grebes, loons,
+    # cormorants, woodpeckers, songbirds -> no honest glyph exists. 🐦.
 ]
 
 def emoji_for(name):

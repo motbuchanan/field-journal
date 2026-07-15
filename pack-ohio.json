@@ -48,7 +48,7 @@
   },
   {
    "name": "Great Blue Heron",
-   "emoji": "\ud83e\udda9",
+   "emoji": "\ud83d\udc26",
    "status": "common",
    "freq": 34,
    "tags": [
@@ -69,7 +69,7 @@
   },
   {
    "name": "Ring-billed Gull",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "common",
    "freq": 30,
    "tags": [
@@ -110,7 +110,7 @@
   },
   {
    "name": "Great Egret",
-   "emoji": "\ud83e\udda9",
+   "emoji": "\ud83d\udc26",
    "status": "common",
    "freq": 26,
    "tags": [
@@ -131,7 +131,7 @@
   },
   {
    "name": "Double-crested Cormorant",
-   "emoji": "\ud83e\udd86",
+   "emoji": "\ud83d\udc26",
    "status": "common",
    "freq": 25,
    "tags": [
@@ -231,7 +231,7 @@
   },
   {
    "name": "Green Heron",
-   "emoji": "\ud83e\udda9",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 14,
    "tags": [
@@ -251,7 +251,7 @@
   },
   {
    "name": "American Herring Gull",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 13,
    "tags": [
@@ -272,7 +272,7 @@
   },
   {
    "name": "Bonaparte's Gull",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 13,
    "tags": [
@@ -322,7 +322,7 @@
   },
   {
    "name": "Pied-billed Grebe",
-   "emoji": "\ud83e\udd86",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 12,
    "tags": [
@@ -469,7 +469,7 @@
   },
   {
    "name": "American Coot",
-   "emoji": "\ud83e\udd86",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 10,
    "tags": [
@@ -490,7 +490,7 @@
   },
   {
    "name": "Caspian Tern",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 10,
    "tags": [
@@ -529,7 +529,7 @@
   },
   {
    "name": "Common Loon",
-   "emoji": "\ud83e\udd86",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 9,
    "tags": [
@@ -558,7 +558,7 @@
   },
   {
    "name": "American White Pelican",
-   "emoji": "\ud83e\udd86",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 8,
    "tags": [
@@ -597,7 +597,7 @@
   },
   {
    "name": "Horned Grebe",
-   "emoji": "\ud83e\udd86",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 8,
    "tags": [
@@ -646,7 +646,7 @@
   },
   {
    "name": "Sandhill Crane",
-   "emoji": "\ud83e\udda9",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 8,
    "tags": [
@@ -707,7 +707,7 @@
   },
   {
    "name": "Common Tern",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 7,
    "tags": [
@@ -816,7 +816,7 @@
   },
   {
    "name": "Great Black-backed Gull",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 4,
    "tags": [
@@ -876,7 +876,7 @@
   },
   {
    "name": "Forster's Tern",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 3,
    "tags": [
@@ -956,7 +956,7 @@
   },
   {
    "name": "Black-crowned Night Heron",
-   "emoji": "\ud83e\udda9",
+   "emoji": "\ud83d\udc26",
    "status": "rare",
    "freq": 2,
    "tags": [
@@ -966,7 +966,7 @@
   },
   {
    "name": "Lesser Black-backed Gull",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "rare",
    "freq": 2,
    "tags": [
@@ -976,7 +976,7 @@
   },
   {
    "name": "Little Blue Heron",
-   "emoji": "\ud83e\udda9",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 2,
    "tags": [
@@ -986,7 +986,7 @@
   },
   {
    "name": "Snowy Egret",
-   "emoji": "\ud83e\udda9",
+   "emoji": "\ud83d\udc26",
    "status": "uncommon",
    "freq": 2,
    "tags": [
@@ -1026,7 +1026,7 @@
   },
   {
    "name": "American Bittern",
-   "emoji": "\ud83e\udda9",
+   "emoji": "\ud83d\udc26",
    "status": "rare",
    "freq": 1,
    "tags": [
@@ -1036,7 +1036,7 @@
   },
   {
    "name": "Black Tern",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "rare",
    "freq": 1,
    "tags": [
@@ -1076,7 +1076,7 @@
   },
   {
    "name": "Franklin's Gull",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "rare",
    "freq": 1,
    "tags": [
@@ -1086,7 +1086,7 @@
   },
   {
    "name": "Glaucous Gull",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "rare",
    "freq": 1,
    "tags": [
@@ -1096,7 +1096,7 @@
   },
   {
    "name": "Glossy Ibis",
-   "emoji": "\ud83e\udda9",
+   "emoji": "\ud83d\udc26",
    "status": "rare",
    "freq": 1,
    "tags": [
@@ -1126,7 +1126,7 @@
   },
   {
    "name": "Iceland Gull",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "rare",
    "freq": 1,
    "tags": [
@@ -1136,7 +1136,7 @@
   },
   {
    "name": "Least Bittern",
-   "emoji": "\ud83e\udda9",
+   "emoji": "\ud83d\udc26",
    "status": "rare",
    "freq": 1,
    "tags": [
@@ -1146,7 +1146,7 @@
   },
   {
    "name": "Little Gull",
-   "emoji": "\ud83d\udd4a\ufe0f",
+   "emoji": "\ud83d\udc26",
    "status": "rare",
    "freq": 1,
    "tags": [
@@ -1196,7 +1196,7 @@
   },
   {
    "name": "Red-necked Grebe",
-   "emoji": "\ud83e\udd86",
+   "emoji": "\ud83d\udc26",
    "status": "rare",
    "freq": 1,
    "tags": [
@@ -1216,7 +1216,7 @@
   },
   {
    "name": "Red-throated Loon",
-   "emoji": "\ud83e\udd86",
+   "emoji": "\ud83d\udc26",
    "status": "rare",
    "freq": 1,
    "tags": [
