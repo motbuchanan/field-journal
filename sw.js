@@ -3,7 +3,7 @@
  * CACHE VERSION MUST MATCH THE VERSION BADGE IN index.html.
  * Bump it on every deploy or installed devices never see the update.
  */
-const VERSION = 'v4.5';
+const VERSION = 'v5.0';
 const SHELL   = `field-journal-shell-${VERSION}`;
 const PACKS   = `field-journal-packs-${VERSION}`;
 

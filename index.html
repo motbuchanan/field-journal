@@ -365,7 +365,7 @@ body {
 }
 .panel-clear:hover { border-color:var(--leather); color:var(--leather); }
 .version-badge {
-  position:fixed; top:10px; left:10px;
+  position:fixed; bottom:10px; right:10px;
   font-family:'Cutive Mono',monospace; font-size:11px; font-weight:bold;
   letter-spacing:1px;
   color:var(--gold-lt); z-index:200; cursor:pointer;
@@ -375,6 +375,101 @@ body {
   box-shadow:0 2px 6px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,220,150,0.25);
   transform:rotate(-2deg);
 }
+
+/* ═══ MODE TABS (Field Notes / Cards) ═══ */
+.mode-tabs { display:flex; margin:0 16px 0 52px; border:1.5px solid rgba(139,69,19,0.4); }
+.mode-tab {
+  flex:1; padding:9px 4px; background:transparent; border:0; cursor:pointer;
+  font-family:'Special Elite',serif; font-size:13px; color:var(--leather);
+  letter-spacing:.5px;
+}
+.mode-tab.active { background:var(--leather); color:#f5e6c8; }
+body.mode-cards #filter-bar, body.mode-cards .search-bar, body.mode-cards #bird-list { display:none; }
+#cards-view { display:none; padding:12px 12px 24px 48px; }
+body.mode-cards #cards-view { display:block; }
+
+.cards-progress {
+  display:flex; align-items:flex-end; justify-content:space-between;
+  margin-bottom:10px; padding:0 2px;
+}
+.cards-progress .big { font-family:'Special Elite',serif; font-size:22px; color:var(--ink); line-height:1; }
+.cards-progress .big small { font-family:'Caveat',cursive; font-size:14px; color:var(--muted); }
+.cards-progress .pts { font-family:'Caveat',cursive; font-size:17px; color:var(--gold); text-align:right; }
+.cards-progress .pts b { font-size:22px; color:#7a5a10; }
+.cards-bar { height:6px; background:rgba(139,69,19,0.15); margin-bottom:12px; overflow:hidden; }
+.cards-bar div { height:100%; background:var(--gold); transition:width .6s ease; }
+
+.card-filters { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:12px; }
+.card-filter {
+  font-family:'Caveat',cursive; font-size:14px; padding:3px 10px; cursor:pointer;
+  background:transparent; border:1px solid rgba(139,69,19,0.35); color:var(--leather);
+}
+.card-filter.active { background:var(--leather); color:#f5e6c8; }
+
+.card-grid { display:grid; grid-template-columns:repeat(2,1fr); gap:10px; }
+@media (min-width:520px) { .card-grid { grid-template-columns:repeat(3,1fr); } }
+@media (min-width:760px) { .card-grid { grid-template-columns:repeat(4,1fr); } }
+
+.tcard {
+  position:relative; background:var(--leather-dk); padding:5px; cursor:pointer;
+  box-shadow:0 2px 6px rgba(0,0,0,0.25); transition:transform .12s;
+  animation:fadeSlideUp .3s ease both;
+}
+.tcard:active { transform:scale(.97); }
+.tcard-inner { background:var(--paper); border:1px solid rgba(200,150,42,0.4); padding:6px 6px 7px; }
+.tcard.blank { opacity:.55; }
+.tcard.blank .tcard-inner { background:var(--paper-dark); }
+.tcard.full { background:linear-gradient(135deg,#7a5a10,var(--gold),#f5d880,var(--gold),#7a5a10); }
+.tcard.full .tcard-inner { border-color:var(--gold); }
+.tcard-art { display:flex; gap:3px; aspect-ratio:1/1; margin-bottom:6px; }
+.slot {
+  flex:1; position:relative; overflow:hidden; background:rgba(139,69,19,0.08);
+  display:flex; align-items:center; justify-content:center; color:rgba(90,62,40,0.5);
+}
+.slot img { width:100%; height:100%; object-fit:cover; display:block; }
+.slot .sex { position:absolute; bottom:2px; left:4px; font-family:'Caveat',cursive; font-size:13px;
+  color:#f5e6c8; text-shadow:0 1px 2px rgba(0,0,0,.7); }
+.slot.empty .sex { color:var(--muted); text-shadow:none; }
+.slot.need::after { content:'needed'; position:absolute; top:3px; right:4px; font-family:'Caveat',cursive;
+  font-size:11px; color:var(--rust); }
+.tcard-name { font-family:'Special Elite',serif; font-size:11.5px; color:var(--ink); line-height:1.15;
+  min-height:27px; }
+.tcard-foot { display:flex; justify-content:space-between; align-items:center; margin-top:4px; }
+.tcard-pts { font-family:'Caveat',cursive; font-size:13px; color:#7a5a10; }
+.tcard-target { position:absolute; top:2px; right:5px; font-size:12px; color:var(--gold-lt);
+  text-shadow:0 1px 2px rgba(0,0,0,.6); }
+.tcard-stamp { position:absolute; top:34%; left:8%; right:8%; text-align:center; transform:rotate(-14deg);
+  font-family:'Special Elite',serif; font-size:13px; color:var(--rust); letter-spacing:2px;
+  border:2px solid var(--rust); padding:2px 0; opacity:.75; pointer-events:none; background:rgba(242,232,213,.6); }
+
+/* Detail: photo slots */
+.photo-row { display:flex; gap:8px; margin:8px 0 6px; }
+.photo-slot {
+  flex:1; aspect-ratio:1/1; position:relative; overflow:hidden; cursor:pointer;
+  border:1.5px dashed rgba(139,69,19,0.45); background:rgba(139,69,19,0.06);
+  display:flex; flex-direction:column; align-items:center; justify-content:center; gap:4px;
+  font-family:'Caveat',cursive; font-size:15px; color:var(--leather);
+}
+.photo-slot.has { border-style:solid; border-color:var(--gold); }
+.photo-slot img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; }
+.photo-slot .ps-label { position:absolute; bottom:4px; left:6px; color:#f5e6c8; text-shadow:0 1px 2px rgba(0,0,0,.7); z-index:1; }
+.photo-slot .ps-x {
+  position:absolute; top:2px; right:2px; z-index:2; width:26px; height:26px; border:0;
+  background:rgba(26,14,4,0.7); color:var(--paper); font-size:16px; cursor:pointer;
+}
+.photo-slot .ps-icon { font-size:26px; }
+.mini-toggle {
+  display:flex; align-items:center; gap:8px; font-family:'Caveat',cursive; font-size:15px;
+  color:var(--ink-faded); margin:6px 0 2px; cursor:pointer;
+}
+.mini-toggle input { width:18px; height:18px; accent-color:var(--leather); }
+.target-btn {
+  width:100%; padding:9px; margin-top:8px; cursor:pointer; background:transparent;
+  border:1.5px solid rgba(200,150,42,0.6); color:#7a5a10;
+  font-family:'Special Elite',serif; font-size:13px;
+}
+.target-btn.on { background:var(--gold); color:var(--ink); border-color:var(--gold); }
+
 .toast {
   position:fixed; bottom:80px; left:50%; transform:translateX(-50%) translateY(20px);
   background:var(--ink); color:var(--paper); padding:10px 18px;
@@ -418,6 +513,25 @@ body {
   <div class="region-bar">
     <span id="region-name"></span>
     <button class="region-switch" onclick="showSetup()">change region</button>
+  </div>
+  <div class="mode-tabs">
+    <button class="mode-tab active" id="mode-notes" onclick="setMode('notes')">Field Notes</button>
+    <button class="mode-tab" id="mode-cards" onclick="setMode('cards')">Cards</button>
+  </div>
+  <div id="cards-view">
+    <div class="cards-progress">
+      <div class="big"><span id="cards-done">0</span><small> / <span id="cards-total">0</span> cards</small></div>
+      <div class="pts"><b id="cards-pts">0</b> pts</div>
+    </div>
+    <div class="cards-bar"><div id="cards-bar-fill" style="width:0%"></div></div>
+    <div class="card-filters" id="card-filters">
+      <button class="card-filter active" data-cf="targets">★ Targets</button>
+      <button class="card-filter" data-cf="all">All</button>
+      <button class="card-filter" data-cf="progress">In progress</button>
+      <button class="card-filter" data-cf="full">Complete</button>
+      <button class="card-filter" data-cf="blank">Not started</button>
+    </div>
+    <div class="card-grid" id="card-grid"></div>
   </div>
   <div class="filter-bar" id="filter-bar">
     <button class="filter-btn active" data-f="all">All</button>
@@ -463,12 +577,16 @@ body {
       placeholder="Where and when did you spot it? Weather, behavior, location..."
       oninput="saveNotes(this.value)"></textarea>
 
+    <div class="section-label">My Photos</div>
+    <div id="photo-section"></div>
+    <input type="file" id="photo-file" accept="image/*" style="display:none" onchange="photoPicked(event)">
+
     <div id="detail-rich"></div>
   </div>
 </div>
 
 <button class="fab" id="fab" onclick="openPanel()">+</button>
-<div class="version-badge" onclick="toast('Field Journal v4.5 · Jul 14')">v4.5 · Jul 14</div>
+<div class="version-badge" onclick="toast('Field Journal v5.0 · Sep 2')">v5.0 · Sep 2</div>
 <div class="toast" id="toast"></div>
 
 <!-- ═══ ADD SPECIES PANEL ═══ -->
@@ -513,7 +631,7 @@ body {
 
 <script>
 /* ══════════════════════════════════════════════════════════════
-   FIELD JOURNAL — BIRD TRACKER  v2.0
+   FIELD JOURNAL — BIRD TRACKER  v5.0 (Cards layer)
    Pack-based architecture:
      - Species data lives in packs/*.json, loaded at runtime
      - Sightings are keyed by species NAME and stored separately,
@@ -521,12 +639,14 @@ body {
      - Everything saves on-device. No account, no cloud, no tracking.
    ══════════════════════════════════════════════════════════════ */
 
-const VERSION = 'v4.5';
+const VERSION = 'v5.0';
 const SK = { // versioned storage keys
   pack:      'bft_v1_pack',
   packMeta:  'bft_v1_packmeta',
   sightings: 'bft_v1_sightings',
-  custom:    'bft_v1_custom'
+  custom:    'bft_v1_custom',
+  targets:   'bft_v1_targets',
+  seeded:    'bft_v1_seeded'
 };
 
 // ── Guarded storage (falls back to memory if localStorage blocked) ──
@@ -553,10 +673,297 @@ let packMeta  = null; // { id, name, subtitle }
 let currentBird = null;
 let currentSex  = 'male';
 let currentFilter = 'all';
+let TARGETS = new Set(); // species names being chased first
+let PHOTOS  = {};        // { "Wood Duck|male": dataURL } mirrored from IndexedDB
+let currentMode = 'notes';
+let cardFilter  = 'targets';
 
 // All species = pack + custom
 function allBirds() { return SPECIES.concat(CUSTOM); }
 function sighting(name) { return SIGHTINGS[name] || { seen:false, notes:'' }; }
+
+// ══════════════════════════════════════════════════════════════
+// CARDS — targets, photos, mono rule, points
+// ══════════════════════════════════════════════════════════════
+// Seed list: Mot's Merlin life list, Sep 2 2026. Loaded once (SK.seeded).
+const SEED_TARGETS = ["Canada Goose","Wood Duck","Mallard","Mourning Dove","Chimney Swift",
+"Ruby-throated Hummingbird","Killdeer","Great Blue Heron","Turkey Vulture","Red-shouldered Hawk",
+"Red-tailed Hawk","Red-bellied Woodpecker","Downy Woodpecker","Hairy Woodpecker","Northern Flicker",
+"Great Crested Flycatcher","Red-eyed Vireo","Blue Jay","American Crow","Black-capped Chickadee",
+"Tufted Titmouse","Barn Swallow","White-breasted Nuthatch","Carolina Wren","European Starling",
+"Gray Catbird","Eastern Bluebird","American Robin","House Sparrow","House Finch","American Goldfinch",
+"Chipping Sparrow","Field Sparrow","Song Sparrow","Swamp Sparrow","Eastern Towhee","Baltimore Oriole",
+"Red-winged Blackbird","Brown-headed Cowbird","Common Grackle","Common Yellowthroat","Northern Cardinal",
+"Rose-breasted Grosbeak","Indigo Bunting","Trumpeter Swan","Green-winged Teal","Ruddy Duck","Wild Turkey",
+"Green Heron","Osprey","Cooper's Hawk","Bald Eagle","American Kestrel","White-eyed Vireo","Brown Thrasher",
+"Cedar Waxwing","Northern Bobwhite","Rock Pigeon","White-winged Dove","American Barn Owl"];
+// Species on the seed list that the Ohio pack doesn't carry — added as custom.
+const SEED_CUSTOM = [
+  { name:'Northern Bobwhite', sci:'Colinus virginianus', tags:['songbird'], status:'rare' },
+  { name:'White-winged Dove',  sci:'Zenaida asiatica',   tags:['songbird'], status:'rare' },
+  { name:'American Barn Owl',  sci:'Tyto furcata',       tags:['raptor'],   status:'rare' }
+];
+
+// Sexes look alike → one photo completes the card.
+// Derived from the pack's female text, minus species where the text says
+// "identical" but a real field mark exists (red patch, moustache, brown-for-black).
+const MONO_RE = /^(identical|nearly identical|very similar|sexes (are )?identical|indistinguishable|the sexes)/i;
+const MONO_NOT = new Set(['Downy Woodpecker','Hairy Woodpecker','Northern Flicker','Eastern Towhee',
+  'Mallard','Osprey','Cooper\'s Hawk','Green Heron','Pileated Woodpecker','Red-headed Woodpecker']);
+function isMono(b) {
+  const s = sighting(b.name);
+  if (s.mono === true || s.mono === false) return s.mono;   // user override
+  if (b.custom) return false;
+  if (MONO_NOT.has(b.name)) return false;
+  return MONO_RE.test(String(b.female || '').trim());
+}
+function slotsFor(b) { return isMono(b) ? ['bird'] : ['male','female']; }
+function photoKey(name, sex) { return name + '|' + sex; }
+function photoOf(name, sex) { return PHOTOS[photoKey(name, sex)] || null; }
+
+// Card value from eBird frequency (freq = % of checklists). Rarer = more.
+function tierPts(b) {
+  if (b.freq !== undefined) {
+    const f = Math.max(b.freq, 0.5);
+    return Math.max(10, Math.min(120, Math.round(120 / Math.sqrt(f))));
+  }
+  return { common:10, uncommon:25, rare:60 }[b.status] || 10;
+}
+function cardState(b) {
+  const slots = slotsFor(b);
+  const have  = slots.filter(s => photoOf(b.name, s)).length;
+  if (have === slots.length) return 'full';
+  if (have > 0) return 'half';
+  return sighting(b.name).seen ? 'seen' : 'blank';
+}
+function cardPts(b) {
+  const slots = slotsFor(b);
+  const have  = slots.filter(s => photoOf(b.name, s)).length;
+  const t = tierPts(b);
+  let p = have * t;
+  if (have === slots.length && slots.length === 2) p += t;   // pair bonus
+  return p;
+}
+
+// ── IndexedDB for thumbnails (falls back to memory) ──
+let idb = null;
+function openIDB() {
+  return new Promise(res => {
+    if (!('indexedDB' in window)) return res(null);
+    try {
+      const r = indexedDB.open('fj-photos', 1);
+      r.onupgradeneeded = () => r.result.createObjectStore('thumbs');
+      r.onsuccess = () => res(r.result);
+      r.onerror   = () => res(null);
+    } catch(e) { res(null); }
+  });
+}
+function idbAll() {
+  return new Promise(res => {
+    if (!idb) return res({});
+    const out = {};
+    const st = idb.transaction('thumbs','readonly').objectStore('thumbs');
+    const cur = st.openCursor();
+    cur.onsuccess = e => { const c = e.target.result; if (c) { out[c.key] = c.value; c.continue(); } else res(out); };
+    cur.onerror = () => res(out);
+  });
+}
+function idbPut(k, v) {
+  return new Promise(res => {
+    if (!idb) return res(false);
+    const tx = idb.transaction('thumbs','readwrite');
+    tx.objectStore('thumbs').put(v, k);
+    tx.oncomplete = () => res(true); tx.onerror = () => res(false);
+  });
+}
+function idbDel(k) {
+  return new Promise(res => {
+    if (!idb) return res(false);
+    const tx = idb.transaction('thumbs','readwrite');
+    tx.objectStore('thumbs').delete(k);
+    tx.oncomplete = () => res(true); tx.onerror = () => res(false);
+  });
+}
+function idbClear() {
+  return new Promise(res => {
+    if (!idb) return res(false);
+    const tx = idb.transaction('thumbs','readwrite');
+    tx.objectStore('thumbs').clear();
+    tx.oncomplete = () => res(true); tx.onerror = () => res(false);
+  });
+}
+
+// ── Photo capture: downscale to a 360px thumbnail, JPEG ──
+let pendingSex = null;
+function pickPhoto(sex) {
+  pendingSex = sex;
+  document.getElementById('photo-file').click();
+}
+function photoPicked(e) {
+  const file = e.target.files[0];
+  e.target.value = '';
+  if (!file || !currentBird || !pendingSex) return;
+  const sex = pendingSex; pendingSex = null;
+  const url = URL.createObjectURL(file);
+  const img = new Image();
+  img.onload = async () => {
+    const MAX = 360;
+    const sc = Math.min(1, MAX / Math.max(img.width, img.height));
+    const w = Math.round(img.width * sc), h = Math.round(img.height * sc);
+    const c = document.createElement('canvas'); c.width = w; c.height = h;
+    c.getContext('2d').drawImage(img, 0, 0, w, h);
+    URL.revokeObjectURL(url);
+    const data = c.toDataURL('image/jpeg', 0.82);
+    const k = photoKey(currentBird.name, sex);
+    PHOTOS[k] = data;
+    await idbPut(k, data);
+    // A photo is a sighting.
+    const s = sighting(currentBird.name);
+    if (!s.seen) { SIGHTINGS[currentBird.name] = Object.assign({}, s, { seen:true }); store(SK.sightings, SIGHTINGS); }
+    renderPhotoSection(); refreshSeen(); renderList(); renderCards(); updateCount();
+    const st = cardState(currentBird);
+    toast(st === 'full' ? currentBird.name + ' card complete! +' + cardPts(currentBird) + ' pts' : 'Photo saved');
+  };
+  img.onerror = () => { URL.revokeObjectURL(url); toast("Couldn't read that image."); };
+  img.src = url;
+}
+async function removePhoto(sex, ev) {
+  if (ev) ev.stopPropagation();
+  if (!currentBird) return;
+  const k = photoKey(currentBird.name, sex);
+  delete PHOTOS[k];
+  await idbDel(k);
+  renderPhotoSection(); renderCards();
+  toast('Photo removed');
+}
+function toggleMono(v) {
+  if (!currentBird) return;
+  const s = sighting(currentBird.name);
+  SIGHTINGS[currentBird.name] = Object.assign({}, s, { mono: !!v });
+  store(SK.sightings, SIGHTINGS);
+  renderPhotoSection(); renderCards();
+}
+function toggleTarget() {
+  if (!currentBird) return;
+  if (TARGETS.has(currentBird.name)) TARGETS.delete(currentBird.name); else TARGETS.add(currentBird.name);
+  store(SK.targets, Array.from(TARGETS));
+  renderPhotoSection(); renderCards();
+}
+const SEX_LABEL = { male:'♂ Male', female:'♀ Female', bird:'Photo' };
+function renderPhotoSection() {
+  const el = document.getElementById('photo-section');
+  if (!el || !currentBird) return;
+  const b = currentBird;
+  const mono = isMono(b);
+  const slots = slotsFor(b);
+  let html = '<div class="photo-row">';
+  slots.forEach(sex => {
+    const p = photoOf(b.name, sex);
+    html += `<div class="photo-slot ${p ? 'has' : ''}" onclick="pickPhoto('${sex}')">
+      ${p ? `<img src="${p}" alt=""><button class="ps-x" onclick="removePhoto('${sex}',event)" aria-label="Remove">×</button>` : `<span class="ps-icon">📷</span><span>add ${sex === 'bird' ? 'photo' : sex}</span>`}
+      <span class="ps-label">${SEX_LABEL[sex]}</span>
+    </div>`;
+  });
+  html += '</div>';
+  if (!b.custom) {
+    html += `<label class="mini-toggle"><input type="checkbox" ${mono ? 'checked' : ''} onchange="toggleMono(this.checked)">
+      Sexes look alike here: one photo completes the card</label>`;
+  } else {
+    html += `<label class="mini-toggle"><input type="checkbox" ${mono ? 'checked' : ''} onchange="toggleMono(this.checked)">
+      One photo completes this card</label>`;
+  }
+  const st = cardState(b);
+  const worth = tierPts(b);
+  html += `<div class="section-text" style="font-family:'Caveat',cursive;font-size:15px;color:var(--muted)">
+    ${mono ? worth + ' pts for the card' : worth + ' pts per side, ' + (worth*3) + ' complete'} · ${st === 'full' ? 'complete' : st === 'half' ? 'one side done' : 'no photos yet'}</div>`;
+  html += `<button class="target-btn ${TARGETS.has(b.name) ? 'on' : ''}" onclick="toggleTarget()">${TARGETS.has(b.name) ? '★ On my target list' : '☆ Add to targets'}</button>`;
+  el.innerHTML = html;
+}
+
+// ── Mode + card grid ──
+function setMode(m) {
+  currentMode = m;
+  document.body.classList.toggle('mode-cards', m === 'cards');
+  document.getElementById('mode-notes').classList.toggle('active', m === 'notes');
+  document.getElementById('mode-cards').classList.toggle('active', m === 'cards');
+  if (m === 'cards') renderCards();
+}
+function renderCards() {
+  const grid = document.getElementById('card-grid');
+  if (!grid) return;
+  const birds = allBirds();
+  const pool = birds.filter(b => {
+    const st = cardState(b);
+    if (cardFilter === 'targets')  return TARGETS.has(b.name);
+    if (cardFilter === 'progress') return st === 'half' || st === 'seen';
+    if (cardFilter === 'full')     return st === 'full';
+    if (cardFilter === 'blank')    return st === 'blank';
+    return true;
+  });
+  // Progress header counts the current filter's pool
+  const done = pool.filter(b => cardState(b) === 'full').length;
+  const pts  = birds.reduce((a,b) => a + cardPts(b), 0);
+  document.getElementById('cards-done').textContent  = done;
+  document.getElementById('cards-total').textContent = pool.length;
+  document.getElementById('cards-pts').textContent   = pts;
+  document.getElementById('cards-bar-fill').style.width = (pool.length ? (100*done/pool.length) : 0) + '%';
+
+  // Sort: complete first, then in progress, then seen, then blank; rarer first within
+  const rank = { full:0, half:1, seen:2, blank:3 };
+  pool.sort((a,b) => (rank[cardState(a)] - rank[cardState(b)]) || (tierPts(b) - tierPts(a)) || a.name.localeCompare(b.name));
+
+  if (!pool.length) { grid.innerHTML = '<div class="no-results">No cards here yet.</div>'; return; }
+  grid.innerHTML = pool.map((b, i) => {
+    const st = cardState(b);
+    const slots = slotsFor(b);
+    const art = slots.map(sex => {
+      const p = photoOf(b.name, sex);
+      const need = !p && st !== 'blank';
+      return `<div class="slot ${p ? '' : 'empty'} ${need ? 'need' : ''}">${p ? `<img src="${p}" alt="">` : silSVG(b.name, 44)}
+        ${sex === 'bird' ? '' : `<span class="sex">${sex === 'male' ? '♂' : '♀'}</span>`}</div>`;
+    }).join('');
+    return `<div class="tcard ${st}" style="animation-delay:${Math.min(i,14)*0.02}s" onclick="showDetail(${JSON.stringify(b.name).replace(/"/g,'&quot;')})">
+      ${TARGETS.has(b.name) ? '<span class="tcard-target">★</span>' : ''}
+      <div class="tcard-inner">
+        <div class="tcard-art">${art}</div>
+        <div class="tcard-name">${b.name}</div>
+        <div class="tcard-foot">
+          ${b.status ? `<span class="badge ${b.status}">${b.status}</span>` : '<span></span>'}
+          <span class="tcard-pts">${cardPts(b) || tierPts(b) * slots.length}${st === 'full' ? ' ✓' : ''}</span>
+        </div>
+      </div>
+      ${st === 'seen' ? '<div class="tcard-stamp">SEEN</div>' : ''}
+    </div>`;
+  }).join('');
+}
+document.getElementById('card-filters').addEventListener('click', e => {
+  const btn = e.target.closest('.card-filter');
+  if (!btn) return;
+  cardFilter = btn.dataset.cf;
+  document.querySelectorAll('.card-filter').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  renderCards();
+});
+
+// One-time seed of the target list + life list
+function seedTargets() {
+  if (recall(SK.seeded, false)) return;
+  const have = new Set(allBirds().map(b => b.name.toLowerCase()));
+  SEED_CUSTOM.forEach(c => {
+    if (!have.has(c.name.toLowerCase())) CUSTOM.push(Object.assign({ order:'', emoji:'🐦', custom:true }, c));
+  });
+  let marked = 0;
+  SEED_TARGETS.forEach(n => {
+    TARGETS.add(n);
+    const s = sighting(n);
+    if (!s.seen) { SIGHTINGS[n] = Object.assign({}, s, { seen:true }); marked++; }
+  });
+  store(SK.custom, CUSTOM);
+  store(SK.sightings, SIGHTINGS);
+  store(SK.targets, Array.from(TARGETS));
+  store(SK.seeded, true);
+  if (marked) setTimeout(() => toast(`Life list loaded: ${SEED_TARGETS.length} targets`), 400);
+}
 
 // ══════════════════════════════════════════════════════════════
 // PACK LOADING
@@ -660,8 +1067,10 @@ function installPack(pack) {
   packMeta = { id: pack.id, name: pack.name, subtitle: pack.subtitle || '' };
   store(SK.pack, SPECIES);
   store(SK.packMeta, packMeta);
+  seedTargets();
   showList();
   renderList();
+  renderCards();
   updateCount();
   toast(SPECIES.length ? `${pack.name} loaded — ${SPECIES.length} species` : 'Blank list ready');
 }
@@ -787,14 +1196,29 @@ function showSetup() {
   renderPackList();
   window.scrollTo(0,0);
 }
-function showList() {
+function showList(fromPop) {
+  // If the user tapped the on-screen back arrow (not the phone back button),
+  // consume the history entry we pushed in showDetail so the two stay in sync.
+  if (!fromPop && history.state && history.state.view === 'detail') {
+    history.back();   // triggers popstate, which calls showList(true)
+    return;
+  }
   document.getElementById('setup-view').style.display = 'none';
   document.getElementById('list-view').style.display  = 'block';
   document.getElementById('detail-view').style.display = 'none';
   document.getElementById('fab').classList.add('show');
   document.getElementById('region-name').textContent = packMeta ? packMeta.name : '';
+  if (currentMode === 'cards') renderCards();
   window.scrollTo(0,0);
 }
+
+// Phone hardware back button: return to the list instead of exiting the app.
+window.addEventListener('popstate', function() {
+  const detail = document.getElementById('detail-view');
+  if (detail && detail.style.display === 'block') {
+    showList(true);
+  }
+});
 
 // ══════════════════════════════════════════════════════════════
 // LIST
@@ -887,6 +1311,7 @@ function showDetail(name) {
 
   refreshSeen();
   document.getElementById('sighting-notes').value = sighting(b.name).notes || '';
+  renderPhotoSection();
 
   // Rich pack data — only shown if the pack provides it
   const rich = document.getElementById('detail-rich');
@@ -943,6 +1368,11 @@ function showDetail(name) {
   dv.classList.remove('visible'); void dv.offsetWidth; dv.classList.add('visible');
   document.getElementById('fab').classList.remove('show');
   window.scrollTo(0,0);
+  // Push a history entry so the phone's hardware back button returns to
+  // the list instead of closing the whole app. popstate (below) catches it.
+  if (!history.state || history.state.view !== 'detail') {
+    history.pushState({ view: 'detail' }, '');
+  }
 }
 
 function setSex(s) {
@@ -966,10 +1396,11 @@ function updatePlumage() {
 function toggleSeen() {
   if (!currentBird) return;
   const s = sighting(currentBird.name);
-  SIGHTINGS[currentBird.name] = { seen: !s.seen, notes: s.notes || '' };
+  SIGHTINGS[currentBird.name] = Object.assign({}, s, { seen: !s.seen, notes: s.notes || '' });
   store(SK.sightings, SIGHTINGS);
   refreshSeen();
   renderList();
+  renderCards();
   updateCount();
 }
 function refreshSeen() {
@@ -983,7 +1414,7 @@ let notesTimer = null;
 function saveNotes(v) {
   if (!currentBird) return;
   const s = sighting(currentBird.name);
-  SIGHTINGS[currentBird.name] = { seen: s.seen, notes: v };
+  SIGHTINGS[currentBird.name] = Object.assign({}, s, { notes: v });
   clearTimeout(notesTimer);
   notesTimer = setTimeout(() => store(SK.sightings, SIGHTINGS), 600);
 }
@@ -1028,6 +1459,7 @@ function addSpecies() {
   ['new-name','new-sci','new-notes'].forEach(id => document.getElementById(id).value = '');
   closePanel();
   renderList();
+  renderCards();
   updateCount();
   toast(name + ' added');
 }
@@ -1039,7 +1471,8 @@ function exportData() {
   const data = {
     app:'field-journal-bird-tracker', schema:1, version:VERSION,
     exported:new Date().toISOString(),
-    pack: packMeta, sightings: SIGHTINGS, custom: CUSTOM
+    pack: packMeta, sightings: SIGHTINGS, custom: CUSTOM,
+    targets: Array.from(TARGETS), photos: PHOTOS
   };
   const blob = new Blob([JSON.stringify(data,null,2)], { type:'application/json' });
   const a = document.createElement('a');
@@ -1060,9 +1493,17 @@ function importData(e) {
       if (!d.sightings) throw new Error('bad backup');
       SIGHTINGS = d.sightings || {};
       CUSTOM    = d.custom || [];
+      TARGETS   = new Set(d.targets || Array.from(TARGETS));
       store(SK.sightings, SIGHTINGS);
       store(SK.custom, CUSTOM);
+      store(SK.targets, Array.from(TARGETS));
+      store(SK.seeded, true);
+      if (d.photos && typeof d.photos === 'object') {
+        PHOTOS = d.photos;
+        idbClear().then(() => Promise.all(Object.keys(PHOTOS).map(k => idbPut(k, PHOTOS[k])))).then(renderCards);
+      }
       renderList();
+      renderCards();
       updateCount();
       const n = Object.values(SIGHTINGS).filter(s => s.seen).length;
       toast(`Restored — ${n} sightings`);
@@ -1124,19 +1565,25 @@ function registerServiceWorker() {
   });
 }
 
-(function init() {
+(async function init() {
   registerServiceWorker();
   SIGHTINGS = recall(SK.sightings, {});
   CUSTOM    = recall(SK.custom, []);
   SPECIES   = recall(SK.pack, null);
   packMeta  = recall(SK.packMeta, null);
+  TARGETS   = new Set(recall(SK.targets, []));
+
+  idb = await openIDB();
+  PHOTOS = await idbAll();
 
   applyTimeOfDay();
 
   if (SPECIES && packMeta) {
     // Returning user — go straight to their list
+    seedTargets();
     showList();
     renderList();
+    renderCards();
     updateCount();
   } else {
     SPECIES = [];
